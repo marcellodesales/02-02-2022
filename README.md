@@ -13,6 +13,37 @@ There will be also NFT entries in different blockchains for time capsule purpose
 * Then, it waits until one of the hours is a match to tweet.
   * Example: `02/02/2022 at 02:22:22` https://twitter.com/marcellodesales/status/1488820144201551873
 
+## Logs
+
+```console
+Current time: 02/02/2022 at 02:02:18  Waiting for 02/02/2022 at 02:02:20
+Current time: 02/02/2022 at 02:02:18  Waiting for 02/02/2022 at 02:02:20
+Current time: 02/02/2022 at 02:02:19  Waiting for 02/02/2022 at 02:02:20
+Current time: 02/02/2022 at 02:02:19  Waiting for 02/02/2022 at 02:02:20
+Current time: 02/02/2022 at 02:02:19  Waiting for 02/02/2022 at 02:02:20
+Current time: 02/02/2022 at 02:02:20  Waiting for 02/02/2022 at 02:02:20
+
+########### Unique !!!!! ----
+
+* Will tweet at 02:02:20
+
+Current time: 02/02/2022 at 02:02:20  Waiting for 02/02/2022 at 02:02:22
+Current time: 02/02/2022 at 02:02:21  Waiting for 02/02/2022 at 02:02:22
+Current time: 02/02/2022 at 02:02:21  Waiting for 02/02/2022 at 02:02:22
+Current time: 02/02/2022 at 02:02:21  Waiting for 02/02/2022 at 02:02:22
+Current time: 02/02/2022 at 02:02:22  Waiting for 02/02/2022 at 02:02:22
+
+########### Unique !!!!! ----
+
+* Will tweet at 02:02:22
+
+Current time: 02/02/2022 at 02:02:22  Waiting for 02/02/2022 at 02:20:00
+Current time: 02/02/2022 at 02:02:23  Waiting for 02/02/2022 at 02:20:00
+Current time: 02/02/2022 at 02:02:23  Waiting for 02/02/2022 at 02:20:00
+Current time: 02/02/2022 at 02:02:23  Waiting for 02/02/2022 at 02:20:00
+Current time: 02/02/2022 at 02:02:24  Waiting for 02/02/2022 at 02:20:00
+```
+
 # Tweet.sh
 
 This script was copied from https://github.com/piroor/tweet.sh
