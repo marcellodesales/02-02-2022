@@ -1,4 +1,4 @@
-# 📅 02022022
+# 📅 02-02-2022
 
 This is a time capsule for the special day that won't repeat!
 
