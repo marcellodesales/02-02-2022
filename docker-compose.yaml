@@ -3,8 +3,10 @@ version: "3.8"
 services:
 
   tweet:
-    image: marcellodesales/2020202020
+    image: marcellodesales/2020202020-build
     build:
       context: .
+      args:
+        MAIN_FILE_NAME: main
     volumes:
-      - ${HOME}:/root
+      - /Users/marcellodesales:/root
