@@ -39,7 +39,6 @@ def unique(list1):
 
 def get_current_list():
   all_combinations = make_combinations() 
-  print(all_combinations)
 
   # Remove all the elements before that time
   exclude_past_time(get_next_time(all_combinations), all_combinations)
@@ -53,7 +52,7 @@ def make_combinations():
 
   full_product = unique(full_product)
   
-  full_product = full_product + ["151940"]
+  full_product = full_product
 
   full_product.sort()
 
@@ -61,6 +60,8 @@ def make_combinations():
 
 def exclude_past_time(last_viewed_time, all_times):
   index_from_last = -1
+
+  # https://stackoverflow.com/questions/27260811/python-find-position-of-element-in-array/55034056#55034056
   for i, val in enumerate(all_times):
     if (val == last_viewed_time):
       index_from_last = i
