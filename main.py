@@ -5,12 +5,23 @@ from datetime import datetime
 from time import sleep
 from pyjavaproperties import Properties
 import os
+import webbrowser
+import urllib.parse
 
+
+# To set your enviornment variables in your terminal run the following line:
+# MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
+# MODE=tweet - it will tweet based on the credentials provided as volume
+MODE = os.environ.get("MODE", "open-tabs")
+
+# https://bitbucket.org/skeptichacker/pyjavaproperties/src/master/
 def load_tweeter_credentials():
   # env vars as props
   props = Properties()
   
   # full path of the props
+  # https://www.geeksforgeeks.org/python-os-path-expanduser-method/
+  # https://github.com/piroor/tweet.sh/issues/35#issuecomment-1027806270
   tweeter_credentials_envs_path = os.path.expanduser('~/.tweet.client.key')
   
   # Load the properties from the file
@@ -143,9 +154,47 @@ def tweet(tweeter_credentials, status_message):
   # Create a tweet
   api.update_status(status_message)
 
+def open_tweet_tabs():
+  print("Will open tabs for your timely tweets...")
+
+  for next_perfect_time in get_current_list():
+    print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
+    
+    hash_tag = "#" + get_tokenized_time(next_perfect_time)
+
+    print("")
+    print("########### Unique !!!!! ----")
+    print("")
+    print("* Will tweet at %s" % (get_tokenized_time(next_perfect_time)))
+    print("")
+    perfect_timed_msg = "This is the unique tweet at 02/02/2022 at %s. #nft #timecapsule #nft02022022%s" % (get_tokenized_time(next_perfect_time), next_perfect_time)
+
+    # wait a couple of milliseconds
+    sleep(3)
+ 
+    try:
+      print("=---> Twitting: '%s'" % (perfect_timed_msg))
+      # https://stackoverflow.com/questions/5607551/how-to-urlencode-a-querystring-in-python/9345102#9345102
+      tweet_url = "https://twitter.com/compose/tweet?text=%s" % urllib.parse.quote_plus(perfect_timed_msg)
+
+      # https://stackoverflow.com/questions/24382738/open-twitter-url-with-app-instead-of-browser
+      # https://elearning.wsldp.com/python3/python-open-web-browser/
+      print("Opening on browser %s" % tweet_url)
+      webbrowser.get("firefox").open(tweet_url)
+
+      print("Success!!!")
+
+    except Exception as err:
+      print("An exception occurred while sending tweet: %s" % err)
+
+  print("Finished with all the tweets to open tabs!")     
+
 # print next times
 #print_json_list()
 
-tweeter_credentials = load_tweeter_credentials()
+if MODE == "open-tabs":
+  open_tweet_tabs()
 
-wait_for_next_time(tweeter_credentials)
+else:
+  tweeter_credentials = load_tweeter_credentials()
+  wait_for_next_time(tweeter_credentials)
