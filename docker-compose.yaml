@@ -3,10 +3,12 @@ version: "3.8"
 services:
 
   tweet:
-    image: marcellodesales/2020202020-build
+    image: marcellodesales/02022022-time-capsule
     build:
       context: .
       args:
+        # The nameo of the main python script 
+        # as it will be compiled to binary
         MAIN_FILE_NAME: main
     volumes:
       - /Users/marcellodesales:/root
