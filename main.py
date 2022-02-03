@@ -138,10 +138,15 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   
   perfect_timed_msg = "This is the unique tweet at 02/02/2022 at %s. #02022022%s" % (get_tokenized_time(perfect_time), perfect_time)
 
-  print("=---> Twitting: '%s'" % (perfect_timed_msg))
-  print("")
+  try:
+    print("=---> Twitting: '%s'" % (perfect_timed_msg))
+    print("")
+    tweet(tweeter_credentials, perfect_timed_msg)
+    print("Success!!!")
 
-  tweet(tweeter_credentials, perfect_timed_msg)
+  except Exception as err:
+    print("An exception occurred while sending tweet: %s" % err)
+
   
 def tweet(tweeter_credentials, status_message):
   # Authenticate to Twitter
