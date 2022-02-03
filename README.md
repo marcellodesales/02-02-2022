@@ -11,7 +11,7 @@ There will be also NFT entries in different blockchains for time capsule purpose
 
 * It calls `combinations.py` to generate the list of next hours.
 * Then, it waits until one of the hours is a match to tweet.
-  * Example: `02/02/2022 at 02:22:22` https://twitter.com/marcellodesales/status/1488820144201551873
+  * Example: `02/02/2022 at 22:22:00` https://twitter.com/marcellodesales/status/1489121976610267136
 
 ## 🔊 Logs
 
@@ -68,4 +68,6 @@ ACCESS_TOKEN_SECRET=5H8y****JNcQK
 
 ## ✅ Test tweet.sh
 
-1. Call `./tweet.sh post "Message"`
+```console
+MODE=test docker-compose up
+```
