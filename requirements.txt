@@ -1,0 +1,2 @@
+pyjavaproperties==0.7
+tweepy==4.5.0

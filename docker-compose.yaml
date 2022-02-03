@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+  tweet:
+    image: marcellodesales/2020202020
+    build:
+      context: .
+    volumes:
+      - ${HOME}:/root
