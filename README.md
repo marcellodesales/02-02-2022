@@ -44,9 +44,9 @@ Current time: 02/02/2022 at 02:02:23  Waiting for 02/02/2022 at 02:20:00
 Current time: 02/02/2022 at 02:02:24  Waiting for 02/02/2022 at 02:20:00
 ```
 
-# 🐦 Tweet.sh
+# 🐦 Tweet
 
-This script was copied from https://github.com/piroor/tweet.sh
+* We use https://www.tweepy.org/ python dependency to tweet!
 
 ## 🔧 Setup Tweet.sh 
 
