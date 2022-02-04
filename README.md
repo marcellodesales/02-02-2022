@@ -7,6 +7,45 @@ This will generate all the tweets for today that matches all combinations of hou
 
 There will be also NFT entries in different blockchains for time capsule purposes!
 
+# 🔧 Setup
+
+> First, make sure to get the Elevate account type approved!
+
+* Collect the config as follows
+  * Create the file `~/.tweet.client.key` with the following contents
+
+* Go to the developer's page
+  * https://developer.twitter.com/en/portal/projects/1488768050035773444/apps/23291738/keys
+* Copy the `Consumer Keys` and `Authentication Tokens`
+  * Bearer Token is NOT needed for the current version
+  * Make sure to re-generate the type after changing the type to `Read-Write` when setting up the production app
+
+Add all the values to the different environment apps by `dev` and `prd`
+
+```ruby
+MY_SCREEN_NAME=marcellodesales
+MY_LANGUAGE=en
+
+######## DEVELOPMENT
+
+#CONSUMER_KEY=0u******AfaE
+#CONSUMER_SECRET=UZ1***PpO
+#ACCESS_TOKEN=280****9CM
+#ACCESS_TOKEN_SECRET=5H8***NcQK
+
+#BEARER_TOKEN=AAAA****uat2
+#CLIENT_ID=a19***pjaQ
+#CLIENT_SECRET=aJbv***2rnXg
+
+########## PRODUCTION
+
+CONSUMER_KEY=Txi****3OH
+CONSUMER_SECRET=qwV****JKBqd
+ACCESS_TOKEN=280****R2jz
+ACCESS_TOKEN_SECRET=XvV****fIDY
+BEARER_TOKEN=AAA****if8G7wO
+```
+
 # 👽 Main script
 
 * It calls `combinations.py` to generate the list of next hours.
@@ -15,19 +54,9 @@ There will be also NFT entries in different blockchains for time capsule purpose
 
 ## 🔊 Logs
 
+* Running will publish tweets as follows
+
 ```console
-Current time: 02/02/2022 at 02:02:18  Waiting for 02/02/2022 at 02:02:20
-Current time: 02/02/2022 at 02:02:18  Waiting for 02/02/2022 at 02:02:20
-Current time: 02/02/2022 at 02:02:19  Waiting for 02/02/2022 at 02:02:20
-Current time: 02/02/2022 at 02:02:19  Waiting for 02/02/2022 at 02:02:20
-Current time: 02/02/2022 at 02:02:19  Waiting for 02/02/2022 at 02:02:20
-Current time: 02/02/2022 at 02:02:20  Waiting for 02/02/2022 at 02:02:20
-
-########### Unique !!!!! ----
-
-* Will tweet at 02:02:20
-
-Current time: 02/02/2022 at 02:02:20  Waiting for 02/02/2022 at 02:02:22
 Current time: 02/02/2022 at 02:02:21  Waiting for 02/02/2022 at 02:02:22
 Current time: 02/02/2022 at 02:02:21  Waiting for 02/02/2022 at 02:02:22
 Current time: 02/02/2022 at 02:02:21  Waiting for 02/02/2022 at 02:02:22
@@ -69,5 +98,16 @@ ACCESS_TOKEN_SECRET=5H8y****JNcQK
 ## ✅ Test tweet.sh
 
 ```console
-MODE=test docker-compose up
+$ TWEET_TEST_TIME=204520 MODE=test python main.py
+Token 2022-02-02 00:00:00  > Current time is 2022-02-03 20:45:13.920616
+Token 2022-02-02 00:00:02  > Current time is 2022-02-03 20:45:13.920682
+
+########### Unique ##########
+
+* Will tweet at 20:45:20
+
+=---> Twitting: 'This is the unique tweet at 02/02/2022 at 20:45:20. #02022022204520'
+
+Success!!!
+Finished attempting to tweets
 ```
