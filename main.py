@@ -193,7 +193,8 @@ def find_my_nft_tweets(tweeter_credentials):
   query = "from:%s \"This is the unique tweet\"" % logged_user
   public_tweets = api.search_tweets(count=50, q=query, result_type="recent",
                                     since_id="1484063267618127872", include_entities=True)
-  # tweet is the status object:
+
+  # tweet is the status object: https://developer.twitter.com/en/docs/twitter-api/v1/data-dictionary/object-model/tweet
   for tweet in public_tweets:
     url = "https://twitter.com/%s/status/%s" % (logged_user, tweet.id)
 
