@@ -11,8 +11,13 @@ import urllib.parse
 
 # To set your enviornment variables in your terminal run the following line:
 # MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
-# MODE=tweet - it will tweet based on the credentials provided as volume
+# MODE=tweet     - it will tweet based on the credentials provided as volume
+# MODE=test      - it will run the tweet for the test
 MODE = os.environ.get("MODE", "open-tabs")
+TWEET_TEST_TIME = os.environ.get("TWEET_TEST_TIME", None)
+if MODE == "test" and len(TWEET_TEST_TIME) != 6:
+  TWEET_TEST_TIME = None
+  MODE = "open-tabs"
 
 # https://bitbucket.org/skeptichacker/pyjavaproperties/src/master/
 def load_tweeter_credentials():
@@ -43,20 +48,22 @@ def get_current_list():
   # Remove all the elements before that time
   exclude_past_time(get_next_time(all_combinations), all_combinations)
 
-  # exclude all the past values
-  return all_combinations
+  # return all the past values or the test one when provided
+  return [TWEET_TEST_TIME] if TWEET_TEST_TIME else all_combinations
+
 
 def make_combinations():
   # https://stackoverflow.com/questions/4928297/all-permutations-of-a-binary-sequence-x-bits-long/4928350#4928350
   full_product = ["".join(seq) for seq in itertools.product("000002", repeat=6)]
 
-  full_product = unique(full_product)
-  
-  full_product = full_product
+  # as they are combined, they will repeat, so let's make them unique
+  full_product = unique(full_product)  
+  full_product = full_product 
 
+  # sort them all
   full_product.sort()
-
   return full_product
+
 
 def exclude_past_time(last_viewed_time, all_times):
   index_from_last = -1
