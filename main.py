@@ -171,8 +171,14 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   
 def tweet(tweeter_credentials, status_message):
   # Authenticate to Twitter
-  auth = tweepy.OAuthHandler(tweeter_credentials["CONSUMER_KEY"], tweeter_credentials["CONSUMER_SECRET"])
-  auth.set_access_token(tweeter_credentials["ACCESS_TOKEN"], tweeter_credentials["ACCESS_TOKEN_SECRET"])
+
+  # This is enabled by setting the keys 
+  # https://developer.twitter.com/en/portal/projects/1488768050035773444/apps/23291738/auth-settings
+  # ATTENTION: The key must be re-generated when the environment is re-created. Make sure to choose production!
+  auth = tweepy.OAuth1UserHandler(
+    tweeter_credentials["CONSUMER_KEY"], tweeter_credentials["CONSUMER_SECRET"],
+    tweeter_credentials["ACCESS_TOKEN"], tweeter_credentials["ACCESS_TOKEN_SECRET"]
+  )
 
   # Create API object
   api = tweepy.API(auth)
