@@ -10,6 +10,7 @@ import os
 import webbrowser
 import urllib.parse
 
+
 # To set your enviornment variables in your terminal run the following line:
 # MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
 # MODE=tweet     - it will tweet based on the credentials provided as volume
@@ -20,6 +21,7 @@ TWEET_TEST_TIME = os.environ.get("TWEET_TEST_TIME", None)
 if MODE == "test" and len(TWEET_TEST_TIME) != 6:
   TWEET_TEST_TIME = None
   MODE = "open-tabs"
+
 
 # https://bitbucket.org/skeptichacker/pyjavaproperties/src/master/
 def load_tweeter_credentials():
@@ -184,9 +186,15 @@ def tweet(tweeter_credentials, status_message):
   api.update_status(status_message)
 
 
+def is_time_palindrome(time):
+    # https://www.geeksforgeeks.org/python-list/
+    return time == time[::-1]
+
+
 def find_my_nft_tweets(tweeter_credentials):
   api = authenticate_on_twitter_env(tweeter_credentials)
 
+  # TODO: The logged user is on the credentials, so maybe get it from there?
   logged_user = tweeter_credentials["MY_SCREEN_NAME"]
 
   # https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/guides/standard-operators
@@ -212,7 +220,12 @@ def find_my_nft_tweets(tweeter_credentials):
     attempt_perfect_time = tweet.text.split("at")[2].split(" ")[1].replace(".", "")
     matched_time = "🎯" if time_only == attempt_perfect_time else "❌"
 
-    print("%s [%s] @ %s: %s" % (matched_time, time_only, url, tweet.text))
+    # Define rarity if the time created on the server is a palindrome!
+    full_date_time = tweet.created_at.astimezone(pytz.timezone('America/Los_Angeles')).strftime("%m%d%Y%I%M%S")
+    print("Full time %s" % full_date_time)
+    time_rarity = "👑" if is_time_palindrome(full_date_time) else ""
+
+    print("%s%s [%s] @ %s: %s" % (time_rarity, matched_time, time_only, url, tweet.text))
 
 
 def print_json_list():
