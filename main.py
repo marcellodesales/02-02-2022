@@ -255,16 +255,22 @@ def open_tweet_tabs():
 
   print("Finished with all the tweets to open tabs!")     
 
-if MODE == "open-tabs":
-  open_tweet_tabs()
+def main():
+  if MODE == "open-tabs":
+    open_tweet_tabs()
 
-elif MODE == "list":
-  tweeter_credentials = load_tweeter_credentials()
-  find_my_nft_tweets(tweeter_credentials)
+  elif MODE == "list":
+    tweeter_credentials = load_tweeter_credentials()
+    find_my_nft_tweets(tweeter_credentials)
 
-else:
-  tweeter_credentials = load_tweeter_credentials()
-  wait_for_next_time(tweeter_credentials)
+  else:
+    tweeter_credentials = load_tweeter_credentials()
+    wait_for_next_time(tweeter_credentials)
 
   print("")
   print("Finished attempting to tweets")
+  #print(json.dumps(json_response, indent=4, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
