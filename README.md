@@ -5,7 +5,7 @@ This is a time capsule for the special day that won't repeat!
 There are only 2 characters in today's date. But, I wanted to keep a record of today's time as well in the form of tweets.
 This will generate all the tweets for today that matches all combinations of hour:minute:second.
 
-There will be also NFT entries in different blockchains for time capsule purposes!
+There will be also NFT entries in different blockchains for time capsule purposes!!!
 
 # 🔧 Setup
 

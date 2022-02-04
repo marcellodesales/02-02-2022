@@ -10,9 +10,13 @@ services:
         # The nameo of the main python script 
         # as it will be compiled to binary
         MAIN_FILE_NAME: main
-    
+
     environment:
       MODE: list
+
+      # Add the test env vars to run the tweet test for the given time
+      #MODE: test
+      #TWEET_TEST_TIME=204520 
 
     volumes:
       - /Users/marcellodesales:/root
