@@ -3,16 +3,18 @@ import json
 import tweepy
 from datetime import datetime
 from time import sleep
+import time
+import pytz
 from pyjavaproperties import Properties
 import os
 import webbrowser
 import urllib.parse
 
-
 # To set your enviornment variables in your terminal run the following line:
 # MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
 # MODE=tweet     - it will tweet based on the credentials provided as volume
 # MODE=test      - it will run the tweet for the test
+# MODE=list      - lists all the nfts
 MODE = os.environ.get("MODE", "open-tabs")
 TWEET_TEST_TIME = os.environ.get("TWEET_TEST_TIME", None)
 if MODE == "test" and len(TWEET_TEST_TIME) != 6:
@@ -36,9 +38,9 @@ def load_tweeter_credentials():
 
 
 # function to get unique values
-def unique(list1):
+def unique(times):
   # insert the list to the set
-  list_set = set(list1)
+  list_set = set(times)
   
   # convert the set to the list
   unique_list = (list(list_set))
@@ -110,12 +112,6 @@ def get_next_time(current_list):
   return last_seen_time
 
 
-def print_json_list():
-  # Genetate the full list
-  full_list = get_current_list()
-  print(json.dumps(full_list))
-
-
 def make_current_time_token():
   # https://www.programiz.com/python-programming/datetime/current-datetime
   return datetime.now().strftime("%H%M%S")
@@ -168,10 +164,7 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   except Exception as err:
     print("An exception occurred while sending tweet: %s" % err)
 
-  
-def tweet(tweeter_credentials, status_message):
-  # Authenticate to Twitter
-
+def authenticate_on_twitter_env(tweeter_credentials):
   # This is enabled by setting the keys 
   # https://developer.twitter.com/en/portal/projects/1488768050035773444/apps/23291738/auth-settings
   # ATTENTION: The key must be re-generated when the environment is re-created. Make sure to choose production!
@@ -181,10 +174,51 @@ def tweet(tweeter_credentials, status_message):
   )
 
   # Create API object
-  api = tweepy.API(auth)
+  return tweepy.API(auth)
+
+
+def tweet(tweeter_credentials, status_message):
+  api = authenticate_on_twitter_env(tweeter_credentials)
 
   # Create a tweet
   api.update_status(status_message)
+
+
+def find_my_nft_tweets(tweeter_credentials):
+  api = authenticate_on_twitter_env(tweeter_credentials)
+
+  logged_user = tweeter_credentials["MY_SCREEN_NAME"]
+
+  # https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/guides/standard-operators
+  query = "from:%s \"This is the unique tweet\"" % logged_user
+  public_tweets = api.search_tweets(count=50, q=query, result_type="recent",
+                                    since_id="1484063267618127872", include_entities=True)
+  # tweet is the status object:
+  for tweet in public_tweets:
+    url = "https://twitter.com/%s/status/%s" % (logged_user, tweet.id)
+
+    # https://stackoverflow.com/questions/10494312/parsing-time-string-in-python/10494427#10494427
+    # https://docs.python.org/3/library/time.html#time.strptime
+    # output is "2022-02-02 08:22:19+00:00"
+    #created_time = datetime.strptime(tweet.created_at, '%Y-%m-%d %I:%M:%S%z')
+
+    # Military time formatter
+    # https://stackoverflow.com/questions/10997577/python-timezone-conversion/62947906#62947906
+    time_only = tweet.created_at.astimezone(pytz.timezone('America/Los_Angeles')).strftime("%H:%M:%S")
+    
+    # Verify if the tweet was sent at the exact h:m:s 
+    # This is the unique tweet at 02/02/2022 at 00:22:20
+    attempt_perfect_time = tweet.text.split("at")[2].split(" ")[1].replace(".", "")
+    matched_time = "🎯" if time_only == attempt_perfect_time else "❌"
+
+    print("%s [%s] @ %s: %s" % (matched_time, time_only, url, tweet.text))
+
+
+def print_json_list():
+  # Genetate the full list
+  full_list = get_current_list()
+  print(json.dumps(full_list))
+
 
 def open_tweet_tabs():
   print("Will open tabs for your timely tweets...")
@@ -223,6 +257,10 @@ def open_tweet_tabs():
 
 if MODE == "open-tabs":
   open_tweet_tabs()
+
+elif MODE == "list":
+  tweeter_credentials = load_tweeter_credentials()
+  find_my_nft_tweets(tweeter_credentials)
 
 else:
   tweeter_credentials = load_tweeter_credentials()

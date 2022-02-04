@@ -10,5 +10,9 @@ services:
         # The nameo of the main python script 
         # as it will be compiled to binary
         MAIN_FILE_NAME: main
+    
+    environment:
+      MODE: list
+
     volumes:
       - /Users/marcellodesales:/root
