@@ -34,13 +34,16 @@ def load_tweeter_credentials():
 
   return props
 
+
 # function to get unique values
 def unique(list1):
-    # insert the list to the set
-    list_set = set(list1)
-    # convert the set to the list
-    unique_list = (list(list_set))
-    return unique_list
+  # insert the list to the set
+  list_set = set(list1)
+  
+  # convert the set to the list
+  unique_list = (list(list_set))
+  return unique_list
+
 
 def get_current_list():
   all_combinations = make_combinations() 
@@ -82,11 +85,15 @@ def get_time_from_token(time_token):
   date_time_str = "02-02-2022 %s" % (get_tokenized_time(time_token))
   return datetime.strptime(date_time_str, '%m-%d-%Y %H:%M:%S')
 
+
 def get_tokenized_time(specified_time):
   return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
+
 def get_next_time(current_list):
+  # Get the current time and compare with the next avilable time
   current_time = datetime.now()
+
   last_seen_time = ""
   for prime_time in current_list:
     # Current time from the token
@@ -97,29 +104,33 @@ def get_next_time(current_list):
     last_seen_time = prime_time
 
     print("Token %s  > Current time is %s" % (time_from_token, current_time))
-
     if time_from_token > current_time:
       break
 
   return last_seen_time
 
+
 def print_json_list():
   # Genetate the full list
   full_list = get_current_list()
-
   print(json.dumps(full_list))
+
 
 def make_current_time_token():
   # https://www.programiz.com/python-programming/datetime/current-datetime
   return datetime.now().strftime("%H%M%S")
 
+
 def get_tokenized_time(specified_time):
+  # Just format the time from 001122 => 00:11:22
   return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
+
 def wait_for_next_time(tweeter_credentials):
+  # Get the next time from the current list
   for next_perfect_time in get_current_list():
     print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
-    
+
     # wait until the current time matches a unique time
     current_time = ""
     while current_time != next_perfect_time:
@@ -130,20 +141,22 @@ def wait_for_next_time(tweeter_credentials):
 
       # wait a couple of milliseconds
       sleep(0.4)
-    
+
+    # Attemtp to send the tweet at this specified time
     tweet_at_perfect_time(tweeter_credentials, next_perfect_time)
-     
+
+
 def tweet_at_perfect_time(tweeter_credentials, perfect_time):
+  # Generate the hash tag based on the time
   hash_tag = "#" + get_tokenized_time(perfect_time)
 
   print("")
-  print("########### Unique !!!!! ----")
+  print("########### Unique ##########")
+  print("")
+  print("* Will tweet at %s" % get_tokenized_time(perfect_time))
   print("")
 
-  print("* Will tweet at %s" % (get_tokenized_time(perfect_time)))
-
-  print("")
-  
+  # This is the message to be tweeted
   perfect_timed_msg = "This is the unique tweet at 02/02/2022 at %s. #02022022%s" % (get_tokenized_time(perfect_time), perfect_time)
 
   try:
@@ -202,12 +215,12 @@ def open_tweet_tabs():
 
   print("Finished with all the tweets to open tabs!")     
 
-# print next times
-#print_json_list()
-
 if MODE == "open-tabs":
   open_tweet_tabs()
 
 else:
   tweeter_credentials = load_tweeter_credentials()
   wait_for_next_time(tweeter_credentials)
+
+  print("")
+  print("Finished attempting to tweets")
