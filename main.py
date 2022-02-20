@@ -170,7 +170,7 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   date_original_format = get_current_date().replace("-", "/")
 
   # This is the message to be tweeted
-  perfect_timed_msg = "This is the unique tweet at 02/02/2022 at %s. #02022022%s" % (get_tokenized_time(perfect_time), perfect_time)
+  perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time} {is_palindrome_text}"
 
   try:
     print("=---> Twitting: '%s'" % (perfect_timed_msg))
