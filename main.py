@@ -3,7 +3,6 @@ import json
 import tweepy
 from datetime import datetime
 from time import sleep
-import time
 import pytz
 from pyjavaproperties import Properties
 import os
@@ -164,6 +163,11 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   print("")
   print("* Will tweet at %s" % get_tokenized_time(perfect_time))
   print("")
+
+  full_time = f"{get_current_date_token()}{perfect_time}"
+  is_palindrome_text = "👑 In addition, this tweet's time is extremely Rare!!! It's a #palindrome 👑. This is rare for this year!" if is_time_palindrome(full_time) else ""
+
+  date_original_format = get_current_date().replace("-", "/")
 
   # This is the message to be tweeted
   perfect_timed_msg = "This is the unique tweet at 02/02/2022 at %s. #02022022%s" % (get_tokenized_time(perfect_time), perfect_time)
