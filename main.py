@@ -165,12 +165,14 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   print("")
 
   full_time = f"{get_current_date_token()}{perfect_time}"
-  is_palindrome_text = "👑 In addition, this tweet's time is extremely Rare!!! It's a #palindrome 👑. This is rare for this year!" if is_time_palindrome(full_time) else ""
 
   date_original_format = get_current_date().replace("-", "/")
 
   # This is the message to be tweeted
-  perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time} {is_palindrome_text}"
+  perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time}"
+
+  if is_time_palindrome(full_time):
+    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time}"
 
   try:
     print("=---> Twitting: '%s'" % (perfect_timed_msg))
