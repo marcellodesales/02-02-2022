@@ -91,6 +91,7 @@ def exclude_past_time(last_viewed_time, all_times):
   # https://stackoverflow.com/questions/627435/how-to-remove-an-element-from-a-list-by-index/44353373#44353373
   del all_times[:index_from_last]
 
+
 def get_time_from_token(time_token):
   # https://stackabuse.com/converting-strings-to-datetime-in-python/
   date_time_str = "%s %s" % (get_current_date(), get_tokenized_time(time_token))
@@ -133,6 +134,9 @@ def get_tokenized_time(specified_time):
 
 def wait_for_next_time(tweeter_credentials):
   # Get the next time from the current list
+
+  print(f"All times list {get_current_list()}")
+
   for next_perfect_time in get_current_list():
     print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
 
