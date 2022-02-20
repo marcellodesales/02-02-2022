@@ -11,6 +11,13 @@ import webbrowser
 import urllib.parse
 
 
+def get_current_date():
+  return "02-20-2022"
+
+
+def get_current_date_token():
+  return get_current_date().replace("-", "")
+
 # To set your enviornment variables in your terminal run the following line:
 # MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
 # MODE=tweet     - it will tweet based on the credentials provided as volume
@@ -86,7 +93,7 @@ def exclude_past_time(last_viewed_time, all_times):
 
 def get_time_from_token(time_token):
   # https://stackabuse.com/converting-strings-to-datetime-in-python/
-  date_time_str = "02-02-2022 %s" % (get_tokenized_time(time_token))
+  date_time_str = "%s %s" % (get_current_date(), get_tokenized_time(time_token))
   return datetime.strptime(date_time_str, '%m-%d-%Y %H:%M:%S')
 
 
@@ -135,7 +142,7 @@ def wait_for_next_time(tweeter_credentials):
       current_time = make_current_time_token()
 
       # Now, it will break the time
-      print("Current time: 02/02/2022 at %s  Waiting for 02/02/2022 at %s" % (get_tokenized_time(current_time), get_tokenized_time(next_perfect_time)))
+      print(f"Current time: {get_current_date()} at {get_tokenized_time(current_time)}  Waiting for {get_current_date()} at {get_tokenized_time(next_perfect_time)}")
 
       # wait a couple of milliseconds
       sleep(0.4)
