@@ -272,7 +272,11 @@ def tweet(tweeter_credentials, status_message):
   api = authenticate_on_twitter_env(tweeter_credentials)
 
   # Create a tweet
-  api.update_status(status_message)
+  tweet_response = api.update_status(status_message)
+  tweet_id = tweet_response.id_str
+  logged_user = tweeter_credentials["MY_SCREEN_NAME"]
+  tweet_url = f"https://twitter.com/{logged_user}/status/{tweet_id}"
+  print(f"Tweed saved at {tweet_url}")
 
 
 def is_time_palindrome(time):
