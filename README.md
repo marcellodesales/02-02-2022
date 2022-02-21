@@ -192,8 +192,15 @@ Finished attempting to tweets
 
 # ⛓ Blockchain Integration - IPFS
 
-* We use IPFS to persist the messages before tweeting them. 
-* Once written, the content will then be able to be cross-checked.
+> **REF**: All you must read about IPFS
+* https://www.freecodecamp.org/news/technical-guide-to-ipfs-decentralized-storage-of-web3/
+* https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/
+* https://docs.infura.io/infura/networks/ipfs/how-to/secure-a-project
+* https://kevincox.ca/2021/02/24/using-ipfs-for-backups/ 
+* https://twitter.com/Web3Coach/status/1406997483281174528?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1406997483281174528%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.freecodecamp.org%2Fnews%2Ftechnical-guide-to-ipfs-decentralized-storage-of-web3%2F
+* https://github.com/ipfs/go-ipfs/blob/master/docs/config.md#profiles
+
+We use IPFS to persist the messages before tweeting them. Once written, the content will then be able to be cross-checked.
 
 ```
 Current time: 02-20-2022 at 22:22:22  Waiting for 02-20-2022 at 22:22:22
@@ -245,12 +252,22 @@ QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
 * Let's first look for the content from the node
 
 ```
-$ docker exec -ti ipfs-pinner_ipfs_1 ash
-/ # ipfs cat QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
-This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222
+$ docker exec -ti ipfs-pinner_ipfs_1 ipfs cat QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 
+   🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain 
+   ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222%
 ```
 
 * Then, the second option is to call the IPFS HTTP REST API
+
+```
+$ curl -X POST "http://127.0.0.1:15001/api/v0/cat?arg=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy"
+This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 
+   🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain 
+   ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222%
+```
+
+> **NOTE**: The binary is with the `get` operation (note the special padding characters on the returned string)
 
 ```
 $ curl -X POST "http://127.0.0.1:15001/api/v0/block/get?arg=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy"
@@ -265,4 +282,72 @@ $ curl -X POST "http://127.0.0.1:15001/api/v0/block/get?arg=QmWfQLTH1ChSFfFjQQMx
 ```
 $ curl -X POST "http://127.0.0.1:15001/api/v0/block/stat?arg=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy"
 {"Key":"QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy","Size":284}
+```
+
+* Finally, retrieving the message from the endpoint as the ultimate validation:
+
+```
+$ curl -i http://localhost:18080/ipfs/QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy                   
+HTTP/1.1 301 Moved Permanently
+Etag: "QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy"
+Location: http://bafybeid3vndwaww6lqrrpay5ik3xodu23ifvyct7mtj7ybthdvn2r24p2y.ipfs.localhost:18080/
+X-Ipfs-Path: /ipfs/QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+
+This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222%
+```
+
+* Links:
+  * View Text Info: https://webui.ipfs.io/#/ipfs/QmSA5yWA3TjdHJKGMYtkWAmQWDdUKQrjYPWewkg28GYNVM
+  * Explore Info: https://webui.ipfs.io/#/explore/ipfs/QmSA5yWA3TjdHJKGMYtkWAmQWDdUKQrjYPWewkg28GYNVM
+  * Gateway (LocaL): http://bafybeibyxhwtfq7zrf45rtqqfi2bgkoc3gdsgviuspqcw5c4y6pcz5hdja.ipfs.localhost:8080/
+
+## Setting up an IPFS Peer
+
+> **PROBLEM**: Python's IPFS client is too old, supporting only IPFS server `0.7.0`, while the current servers is `0.12.0`.
+> **SOLUTION** The way to solve this problem was to bootstrap another IPFS container on the same network with this version to keep working with the APIs.
+
+Since we are working with a P2P protocol, then we can quickly suppot the replication of the blocks from one node to another
+using the peer system. That worked very nicely, as the contents created in the temporary node became available on the newer.
+
+* Just configure the server's config settings 
+  * https://webui.ipfs.io/#/settings
+  * Add the peer... For instance, the host at `ipfs-pinner_ipfs_1` is reached by the main IPFS server.
+
+```json
+{
+  "Addresses": {
+    "API": "/ip4/0.0.0.0/tcp/5001",
+    "Announce": [],
+    "AppendAnnounce": [],
+    "Gateway": "/ip4/0.0.0.0/tcp/8080",
+    "NoAnnounce": [],
+    "Swarm": [
+      "/ip4/0.0.0.0/tcp/4001",
+      "/ip4/ipfs-pinner_ipfs_1/tcp/4001",
+      "/ip6/::/tcp/4001",
+      "/ip4/0.0.0.0/udp/4001/quic",
+      "/ip6/::/udp/4001/quic"
+    ]
+  }
+}
+```
+
+Calling now from both servers can view the content:
+
+* Initial Server`[v0.12.0]`: regular port `5001` 
+* Temporary Server`[v0.7.0]`: updated port `15001`
+
+Calling both servers will serve the object above:
+
+```
+$ curl -X POST "http://127.0.0.1:15001/api/v0/object/get?arg=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy" | jq
+{
+  "Links": [],
+  "Data": "\b\u0002\u0012�\u0002This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222\u0018�\u0002"
+}
+$ curl -X POST "http://127.0.0.1:5001/api/v0/object/get?arg=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy" | jq 
+{
+  "Links": [],
+  "Data": "\b\u0002\u0012�\u0002This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222\u0018�\u0002"
+}
 ```
