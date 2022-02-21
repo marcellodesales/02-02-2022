@@ -190,7 +190,7 @@ Success!!!
 Finished attempting to tweets
 ```
 
-# Blockchain Integration - IPFS
+# ⛓ Blockchain Integration - IPFS
 
 * We use IPFS to persist the messages before tweeting them. 
 * Once written, the content will then be able to be cross-checked.
