@@ -5426,3 +5426,743 @@ Current time: 02-20-2022 at 22:02:30  Waiting for 02-20-2022 at 22:20:00
 Current time: 02-20-2022 at 22:02:31  Waiting for 02-20-2022 at 22:20:00
 Current time: 02-20-2022 at 22:02:31  Waiting for 02-20-2022 at 22:20:00
 Current time: 02-20-2022 at 22:02:32  Waiting for 02-20-2022 at 22:20:00
+
+/Users/marcellodesales/dev/gitlab.com/supercash/products/blockchain/worldfolks/services/worldfolks-characters-api-service/venv/bin/python /Users/marcellodesales/dev/github.com/marcellodesales/02022022/main.py
+Token 2022-02-20 00:00:00  > Current time is 2022-02-20 22:19:18.348899
+Token 2022-02-20 00:00:02  > Current time is 2022-02-20 22:19:18.348953
+Token 2022-02-20 00:00:20  > Current time is 2022-02-20 22:19:18.348977
+Token 2022-02-20 00:00:22  > Current time is 2022-02-20 22:19:18.348998
+Token 2022-02-20 00:02:00  > Current time is 2022-02-20 22:19:18.349017
+Token 2022-02-20 00:02:02  > Current time is 2022-02-20 22:19:18.349036
+Token 2022-02-20 00:02:20  > Current time is 2022-02-20 22:19:18.349055
+Token 2022-02-20 00:02:22  > Current time is 2022-02-20 22:19:18.349073
+Token 2022-02-20 00:20:00  > Current time is 2022-02-20 22:19:18.349093
+Token 2022-02-20 00:20:02  > Current time is 2022-02-20 22:19:18.349111
+Token 2022-02-20 00:20:20  > Current time is 2022-02-20 22:19:18.349129
+Token 2022-02-20 00:20:22  > Current time is 2022-02-20 22:19:18.349147
+Token 2022-02-20 00:22:00  > Current time is 2022-02-20 22:19:18.349165
+Token 2022-02-20 00:22:02  > Current time is 2022-02-20 22:19:18.349183
+Token 2022-02-20 00:22:20  > Current time is 2022-02-20 22:19:18.349201
+Token 2022-02-20 00:22:22  > Current time is 2022-02-20 22:19:18.349220
+Token 2022-02-20 02:00:00  > Current time is 2022-02-20 22:19:18.349237
+Token 2022-02-20 02:00:02  > Current time is 2022-02-20 22:19:18.349255
+Token 2022-02-20 02:00:20  > Current time is 2022-02-20 22:19:18.349273
+Token 2022-02-20 02:00:22  > Current time is 2022-02-20 22:19:18.349290
+Token 2022-02-20 02:02:00  > Current time is 2022-02-20 22:19:18.349308
+Token 2022-02-20 02:02:02  > Current time is 2022-02-20 22:19:18.349325
+Token 2022-02-20 02:02:20  > Current time is 2022-02-20 22:19:18.349343
+Token 2022-02-20 02:02:22  > Current time is 2022-02-20 22:19:18.349360
+Token 2022-02-20 02:20:00  > Current time is 2022-02-20 22:19:18.349378
+Token 2022-02-20 02:20:02  > Current time is 2022-02-20 22:19:18.349395
+Token 2022-02-20 02:20:20  > Current time is 2022-02-20 22:19:18.349413
+Token 2022-02-20 02:20:22  > Current time is 2022-02-20 22:19:18.349431
+Token 2022-02-20 02:22:00  > Current time is 2022-02-20 22:19:18.349448
+Token 2022-02-20 02:22:02  > Current time is 2022-02-20 22:19:18.349467
+Token 2022-02-20 02:22:20  > Current time is 2022-02-20 22:19:18.349485
+Token 2022-02-20 02:22:22  > Current time is 2022-02-20 22:19:18.349503
+Token 2022-02-20 20:00:00  > Current time is 2022-02-20 22:19:18.349520
+Token 2022-02-20 20:00:02  > Current time is 2022-02-20 22:19:18.349538
+Token 2022-02-20 20:00:20  > Current time is 2022-02-20 22:19:18.349556
+Token 2022-02-20 20:00:22  > Current time is 2022-02-20 22:19:18.349573
+Token 2022-02-20 20:02:00  > Current time is 2022-02-20 22:19:18.349591
+Token 2022-02-20 20:02:02  > Current time is 2022-02-20 22:19:18.349609
+Token 2022-02-20 20:02:20  > Current time is 2022-02-20 22:19:18.349626
+Token 2022-02-20 20:02:22  > Current time is 2022-02-20 22:19:18.349643
+Token 2022-02-20 20:20:00  > Current time is 2022-02-20 22:19:18.349661
+Token 2022-02-20 20:20:02  > Current time is 2022-02-20 22:19:18.349679
+Token 2022-02-20 20:20:20  > Current time is 2022-02-20 22:19:18.349696
+Token 2022-02-20 20:20:22  > Current time is 2022-02-20 22:19:18.349713
+Token 2022-02-20 20:22:00  > Current time is 2022-02-20 22:19:18.349731
+Token 2022-02-20 20:22:02  > Current time is 2022-02-20 22:19:18.349748
+Token 2022-02-20 20:22:20  > Current time is 2022-02-20 22:19:18.349765
+Token 2022-02-20 20:22:22  > Current time is 2022-02-20 22:19:18.349783
+Token 2022-02-20 22:00:00  > Current time is 2022-02-20 22:19:18.349800
+Token 2022-02-20 22:00:02  > Current time is 2022-02-20 22:19:18.349818
+Token 2022-02-20 22:00:20  > Current time is 2022-02-20 22:19:18.349835
+Token 2022-02-20 22:00:22  > Current time is 2022-02-20 22:19:18.349853
+Token 2022-02-20 22:02:00  > Current time is 2022-02-20 22:19:18.349870
+Token 2022-02-20 22:02:02  > Current time is 2022-02-20 22:19:18.349888
+Token 2022-02-20 22:02:20  > Current time is 2022-02-20 22:19:18.349905
+Token 2022-02-20 22:02:22  > Current time is 2022-02-20 22:19:18.349923
+Token 2022-02-20 22:20:00  > Current time is 2022-02-20 22:19:18.349940
+All times list ['222000', '222002', '222020', '222022', '222200', '222202', '222220', '222222']
+Token 2022-02-20 00:00:00  > Current time is 2022-02-20 22:19:18.360403
+Token 2022-02-20 00:00:02  > Current time is 2022-02-20 22:19:18.360444
+Token 2022-02-20 00:00:20  > Current time is 2022-02-20 22:19:18.360467
+Token 2022-02-20 00:00:22  > Current time is 2022-02-20 22:19:18.360488
+Token 2022-02-20 00:02:00  > Current time is 2022-02-20 22:19:18.360508
+Token 2022-02-20 00:02:02  > Current time is 2022-02-20 22:19:18.360527
+Token 2022-02-20 00:02:20  > Current time is 2022-02-20 22:19:18.360546
+Token 2022-02-20 00:02:22  > Current time is 2022-02-20 22:19:18.360565
+Token 2022-02-20 00:20:00  > Current time is 2022-02-20 22:19:18.360584
+Token 2022-02-20 00:20:02  > Current time is 2022-02-20 22:19:18.360603
+Token 2022-02-20 00:20:20  > Current time is 2022-02-20 22:19:18.360621
+Token 2022-02-20 00:20:22  > Current time is 2022-02-20 22:19:18.360639
+Token 2022-02-20 00:22:00  > Current time is 2022-02-20 22:19:18.360658
+Token 2022-02-20 00:22:02  > Current time is 2022-02-20 22:19:18.360676
+Token 2022-02-20 00:22:20  > Current time is 2022-02-20 22:19:18.360694
+Token 2022-02-20 00:22:22  > Current time is 2022-02-20 22:19:18.360712
+Token 2022-02-20 02:00:00  > Current time is 2022-02-20 22:19:18.360731
+Token 2022-02-20 02:00:02  > Current time is 2022-02-20 22:19:18.360749
+Token 2022-02-20 02:00:20  > Current time is 2022-02-20 22:19:18.360767
+Token 2022-02-20 02:00:22  > Current time is 2022-02-20 22:19:18.360784
+Token 2022-02-20 02:02:00  > Current time is 2022-02-20 22:19:18.360802
+Token 2022-02-20 02:02:02  > Current time is 2022-02-20 22:19:18.360820
+Token 2022-02-20 02:02:20  > Current time is 2022-02-20 22:19:18.360838
+Token 2022-02-20 02:02:22  > Current time is 2022-02-20 22:19:18.360856
+Token 2022-02-20 02:20:00  > Current time is 2022-02-20 22:19:18.360874
+Token 2022-02-20 02:20:02  > Current time is 2022-02-20 22:19:18.360892
+Token 2022-02-20 02:20:20  > Current time is 2022-02-20 22:19:18.360909
+Token 2022-02-20 02:20:22  > Current time is 2022-02-20 22:19:18.360927
+Token 2022-02-20 02:22:00  > Current time is 2022-02-20 22:19:18.360945
+Token 2022-02-20 02:22:02  > Current time is 2022-02-20 22:19:18.360963
+Token 2022-02-20 02:22:20  > Current time is 2022-02-20 22:19:18.360980
+Token 2022-02-20 02:22:22  > Current time is 2022-02-20 22:19:18.360998
+Token 2022-02-20 20:00:00  > Current time is 2022-02-20 22:19:18.361016
+Token 2022-02-20 20:00:02  > Current time is 2022-02-20 22:19:18.361034
+Token 2022-02-20 20:00:20  > Current time is 2022-02-20 22:19:18.361052
+Token 2022-02-20 20:00:22  > Current time is 2022-02-20 22:19:18.361070
+Token 2022-02-20 20:02:00  > Current time is 2022-02-20 22:19:18.361088
+Token 2022-02-20 20:02:02  > Current time is 2022-02-20 22:19:18.361105
+Token 2022-02-20 20:02:20  > Current time is 2022-02-20 22:19:18.361123
+Token 2022-02-20 20:02:22  > Current time is 2022-02-20 22:19:18.361141
+Token 2022-02-20 20:20:00  > Current time is 2022-02-20 22:19:18.361159
+Token 2022-02-20 20:20:02  > Current time is 2022-02-20 22:19:18.361176
+Token 2022-02-20 20:20:20  > Current time is 2022-02-20 22:19:18.361194
+Token 2022-02-20 20:20:22  > Current time is 2022-02-20 22:19:18.361212
+Token 2022-02-20 20:22:00  > Current time is 2022-02-20 22:19:18.361230
+Token 2022-02-20 20:22:02  > Current time is 2022-02-20 22:19:18.361247
+Token 2022-02-20 20:22:20  > Current time is 2022-02-20 22:19:18.361265
+Token 2022-02-20 20:22:22  > Current time is 2022-02-20 22:19:18.361283
+Token 2022-02-20 22:00:00  > Current time is 2022-02-20 22:19:18.361301
+Token 2022-02-20 22:00:02  > Current time is 2022-02-20 22:19:18.361318
+Token 2022-02-20 22:00:20  > Current time is 2022-02-20 22:19:18.361336
+Token 2022-02-20 22:00:22  > Current time is 2022-02-20 22:19:18.361354
+Token 2022-02-20 22:02:00  > Current time is 2022-02-20 22:19:18.361372
+Token 2022-02-20 22:02:02  > Current time is 2022-02-20 22:19:18.361390
+Token 2022-02-20 22:02:20  > Current time is 2022-02-20 22:19:18.361407
+Token 2022-02-20 22:02:22  > Current time is 2022-02-20 22:19:18.361425
+Token 2022-02-20 22:20:00  > Current time is 2022-02-20 22:19:18.361443
+This is the next time: 22:20:00
+Current time: 02-20-2022 at 22:19:18  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:18  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:19  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:19  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:19  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:20  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:20  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:21  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:21  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:21  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:22  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:22  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:23  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:23  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:24  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:24  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:24  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:25  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:25  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:26  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:26  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:26  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:27  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:27  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:28  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:28  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:28  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:29  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:29  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:30  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:30  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:30  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:31  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:31  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:32  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:32  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:32  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:33  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:33  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:34  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:34  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:34  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:35  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:35  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:36  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:36  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:36  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:37  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:37  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:38  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:38  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:38  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:39  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:39  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:40  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:40  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:40  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:41  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:41  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:42  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:42  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:42  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:43  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:43  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:44  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:44  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:44  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:45  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:45  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:46  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:46  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:46  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:47  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:47  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:48  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:48  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:49  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:49  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:49  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:50  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:50  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:51  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:51  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:51  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:52  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:52  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:53  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:53  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:53  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:54  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:54  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:55  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:55  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:55  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:56  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:56  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:57  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:57  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:57  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:58  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:58  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:59  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:59  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:19:59  Waiting for 02-20-2022 at 22:20:00
+Current time: 02-20-2022 at 22:20:00  Waiting for 02-20-2022 at 22:20:00
+
+########### Unique ##########
+
+* Will tweet at 22:20:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222000.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222000.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222000 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222000 #02202022222000
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222000 #02202022222000'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222000 #02202022222000' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222000 #02202022222000'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmZwY3ebU3y95mcB4S7X76Z3XigkPDeLBHGAPVd4mTKjFY
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmZwY3ebU3y95mcB4S7X76Z3XigkPDeLBHGAPVd4mTKjFY
+IPFS Success: tweet CID=QmZwY3ebU3y95mcB4S7X76Z3XigkPDeLBHGAPVd4mTKjFY
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222000 #IPFS #nft ⛓ #cid_QmZwY3ebU3y95mcB4S7X76Z3XigkPDeLBHGAPVd4mTKjFY'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495644457550499842
+Tweet Success!!!
+This is the next time: 22:20:02
+Current time: 02-20-2022 at 22:20:01  Waiting for 02-20-2022 at 22:20:02
+Current time: 02-20-2022 at 22:20:01  Waiting for 02-20-2022 at 22:20:02
+Current time: 02-20-2022 at 22:20:01  Waiting for 02-20-2022 at 22:20:02
+Current time: 02-20-2022 at 22:20:02  Waiting for 02-20-2022 at 22:20:02
+
+########### Unique ##########
+
+* Will tweet at 22:20:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222002.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222002.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222002 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222002 #02202022222002
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222002 #02202022222002'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222002 #02202022222002' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222002 #02202022222002'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmeeBT2wgVoMFfKu86rXhS1YwjM4zbsosbvU5hc1Q8XJ5H
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmeeBT2wgVoMFfKu86rXhS1YwjM4zbsosbvU5hc1Q8XJ5H
+IPFS Success: tweet CID=QmeeBT2wgVoMFfKu86rXhS1YwjM4zbsosbvU5hc1Q8XJ5H
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222002 #IPFS #nft ⛓ #cid_QmeeBT2wgVoMFfKu86rXhS1YwjM4zbsosbvU5hc1Q8XJ5H'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495644465729392640
+Tweet Success!!!
+This is the next time: 22:20:20
+Current time: 02-20-2022 at 22:20:03  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:03  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:03  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:04  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:04  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:05  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:05  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:05  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:06  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:06  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:07  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:07  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:07  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:08  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:08  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:09  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:09  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:09  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:10  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:10  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:11  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:11  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:11  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:12  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:12  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:13  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:13  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:13  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:14  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:14  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:15  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:15  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:15  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:16  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:16  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:17  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:17  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:17  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:18  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:18  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:19  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:19  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:19  Waiting for 02-20-2022 at 22:20:20
+Current time: 02-20-2022 at 22:20:20  Waiting for 02-20-2022 at 22:20:20
+
+########### Unique ##########
+
+* Will tweet at 22:20:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222020.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222020.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222020 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222020 #02202022222020
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222020 #02202022222020'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222020 #02202022222020' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222020 #02202022222020'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmTPpmSR9FvHPTvpwLQQe5ZNQzHjXA1dVdfdWiHH5hCKcB
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmTPpmSR9FvHPTvpwLQQe5ZNQzHjXA1dVdfdWiHH5hCKcB
+IPFS Success: tweet CID=QmTPpmSR9FvHPTvpwLQQe5ZNQzHjXA1dVdfdWiHH5hCKcB
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222020 #IPFS #nft ⛓ #cid_QmTPpmSR9FvHPTvpwLQQe5ZNQzHjXA1dVdfdWiHH5hCKcB'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495644541533048833
+Tweet Success!!!
+This is the next time: 22:20:22
+Current time: 02-20-2022 at 22:20:21  Waiting for 02-20-2022 at 22:20:22
+Current time: 02-20-2022 at 22:20:21  Waiting for 02-20-2022 at 22:20:22
+Current time: 02-20-2022 at 22:20:21  Waiting for 02-20-2022 at 22:20:22
+Current time: 02-20-2022 at 22:20:22  Waiting for 02-20-2022 at 22:20:22
+
+########### Unique ##########
+
+* Will tweet at 22:20:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222022.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222022.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222022 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222022 #02202022222022
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222022 #02202022222022'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222022 #02202022222022' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:20:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222022 #02202022222022'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmSA5yWA3TjdHJKGMYtkWAmQWDdUKQrjYPWewkg28GYNVM
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmSA5yWA3TjdHJKGMYtkWAmQWDdUKQrjYPWewkg28GYNVM
+IPFS Success: tweet CID=QmSA5yWA3TjdHJKGMYtkWAmQWDdUKQrjYPWewkg28GYNVM
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:20:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222022 #IPFS #nft ⛓ #cid_QmSA5yWA3TjdHJKGMYtkWAmQWDdUKQrjYPWewkg28GYNVM'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495644549787443202
+Tweet Success!!!
+This is the next time: 22:22:00
+Current time: 02-20-2022 at 22:20:23  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:23  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:23  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:24  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:24  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:25  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:25  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:25  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:26  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:26  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:27  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:27  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:27  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:28  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:28  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:29  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:29  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:29  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:30  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:30  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:31  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:31  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:31  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:32  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:32  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:33  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:33  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:33  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:34  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:34  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:35  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:35  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:35  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:36  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:36  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:37  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:37  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:37  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:38  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:38  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:39  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:39  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:40  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:40  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:40  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:41  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:41  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:42  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:42  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:42  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:43  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:43  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:44  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:44  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:44  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:45  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:45  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:46  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:46  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:46  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:47  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:47  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:48  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:48  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:48  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:49  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:49  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:50  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:50  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:50  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:51  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:51  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:52  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:52  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:52  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:53  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:53  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:54  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:54  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:54  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:55  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:55  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:56  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:56  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:56  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:57  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:57  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:58  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:58  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:58  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:59  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:20:59  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:00  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:00  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:00  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:01  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:01  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:02  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:02  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:02  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:03  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:03  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:04  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:04  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:05  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:05  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:05  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:06  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:06  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:07  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:07  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:07  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:08  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:08  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:09  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:09  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:09  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:10  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:10  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:11  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:11  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:11  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:12  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:12  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:13  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:13  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:13  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:14  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:14  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:15  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:15  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:15  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:16  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:16  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:17  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:17  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:17  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:18  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:18  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:19  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:19  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:19  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:20  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:20  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:21  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:21  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:21  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:22  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:22  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:23  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:23  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:23  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:24  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:24  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:25  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:25  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:25  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:26  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:26  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:27  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:27  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:28  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:28  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:28  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:29  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:29  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:30  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:30  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:30  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:31  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:31  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:32  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:32  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:32  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:33  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:33  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:34  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:34  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:34  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:35  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:35  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:36  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:36  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:36  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:37  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:37  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:38  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:38  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:38  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:39  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:39  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:40  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:40  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:40  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:41  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:41  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:42  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:42  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:42  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:43  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:43  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:44  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:44  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:44  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:45  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:45  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:46  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:46  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:46  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:47  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:47  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:48  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:48  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:48  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:49  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:49  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:50  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:50  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:50  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:51  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:51  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:52  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:52  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:52  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:53  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:53  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:54  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:54  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:55  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:55  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:55  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:56  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:56  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:57  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:57  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:57  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:58  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:58  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:59  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:59  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:21:59  Waiting for 02-20-2022 at 22:22:00
+Current time: 02-20-2022 at 22:22:00  Waiting for 02-20-2022 at 22:22:00
+
+########### Unique ##########
+
+* Will tweet at 22:22:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222200.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222200.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222200 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222200 #02202022222200
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222200 #02202022222200'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222200 #02202022222200' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222200 #02202022222200'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmYNgD9BfcRBNWKRngYSnCvJpjji5Quw8DkuWcyVXsee34
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmYNgD9BfcRBNWKRngYSnCvJpjji5Quw8DkuWcyVXsee34
+IPFS Success: tweet CID=QmYNgD9BfcRBNWKRngYSnCvJpjji5Quw8DkuWcyVXsee34
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222200 #IPFS #nft ⛓ #cid_QmYNgD9BfcRBNWKRngYSnCvJpjji5Quw8DkuWcyVXsee34'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495644960573431811
+Tweet Success!!!
+This is the next time: 22:22:02
+Current time: 02-20-2022 at 22:22:01  Waiting for 02-20-2022 at 22:22:02
+Current time: 02-20-2022 at 22:22:01  Waiting for 02-20-2022 at 22:22:02
+Current time: 02-20-2022 at 22:22:01  Waiting for 02-20-2022 at 22:22:02
+Current time: 02-20-2022 at 22:22:02  Waiting for 02-20-2022 at 22:22:02
+
+########### Unique ##########
+
+* Will tweet at 22:22:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222202.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222202.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222202 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222202 #02202022222202
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222202 #02202022222202'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222202 #02202022222202' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222202 #02202022222202'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmYt5Ydb8G23rAAMeix3TSAsJhPvgo1jg77U8L9EHGMVCL
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmYt5Ydb8G23rAAMeix3TSAsJhPvgo1jg77U8L9EHGMVCL
+IPFS Success: tweet CID=QmYt5Ydb8G23rAAMeix3TSAsJhPvgo1jg77U8L9EHGMVCL
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222202 #IPFS #nft ⛓ #cid_QmYt5Ydb8G23rAAMeix3TSAsJhPvgo1jg77U8L9EHGMVCL'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495644968790097920
+Tweet Success!!!
+This is the next time: 22:22:20
+Current time: 02-20-2022 at 22:22:02  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:03  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:03  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:04  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:04  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:04  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:05  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:05  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:06  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:06  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:07  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:07  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:07  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:08  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:08  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:09  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:09  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:09  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:10  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:10  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:11  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:11  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:11  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:12  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:12  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:13  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:13  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:13  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:14  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:14  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:15  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:15  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:15  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:16  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:16  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:17  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:17  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:17  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:18  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:18  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:19  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:19  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:19  Waiting for 02-20-2022 at 22:22:20
+Current time: 02-20-2022 at 22:22:20  Waiting for 02-20-2022 at 22:22:20
+
+########### Unique ##########
+
+* Will tweet at 22:22:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222220.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222220.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222220 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222220 #02202022222220
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222220 #02202022222220'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222220 #02202022222220' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222220 #02202022222220'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmUBMXC5TwXZqQm3Bn2qadAadixowJV4zeZ9ZGmN7X6shv
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmUBMXC5TwXZqQm3Bn2qadAadixowJV4zeZ9ZGmN7X6shv
+IPFS Success: tweet CID=QmUBMXC5TwXZqQm3Bn2qadAadixowJV4zeZ9ZGmN7X6shv
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222220 #IPFS #nft ⛓ #cid_QmUBMXC5TwXZqQm3Bn2qadAadixowJV4zeZ9ZGmN7X6shv'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495645044660862976
+Tweet Success!!!
+This is the next time: 22:22:22
+Current time: 02-20-2022 at 22:22:21  Waiting for 02-20-2022 at 22:22:22
+Current time: 02-20-2022 at 22:22:21  Waiting for 02-20-2022 at 22:22:22
+Current time: 02-20-2022 at 22:22:21  Waiting for 02-20-2022 at 22:22:22
+Current time: 02-20-2022 at 22:22:22  Waiting for 02-20-2022 at 22:22:22
+
+########### Unique ##########
+
+* Will tweet at 22:22:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222222.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222222.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222222 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222222 #02202022222222'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222222 #02202022222222'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+IPFS Success: tweet CID=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222222 #IPFS #nft ⛓ #cid_QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495645052952989696
+Tweet Success!!!
+
+Finished attempting to tweets
+
+Process finished with exit code 0
