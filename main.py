@@ -218,6 +218,8 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   # Generate the hash tag based on the time
   hash_tag = "#" + get_tokenized_time(perfect_time)
 
+  # TODO: Correlate the tweet with IPFS after by using a folder!
+
   print("")
   print("########### Unique ##########")
   print("")
