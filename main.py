@@ -8,6 +8,7 @@ from pyjavaproperties import Properties
 import os
 import webbrowser
 import urllib.parse
+import ipfshttpclient
 
 
 def get_current_date():
@@ -154,6 +155,65 @@ def wait_for_next_time(tweeter_credentials):
     tweet_at_perfect_time(tweeter_credentials, next_perfect_time)
 
 
+def make_ipfs_client():
+  return ipfshttpclient.connect(addr="/dns/localhost/tcp/15001/http")
+
+
+def write_file(time, tweet_message):
+    file_path = f"logs/{time}.tweet"
+    print(f"Saving tweet to local file-system at {file_path}")
+    f = open(file_path, "a")
+    f.write(tweet_message)
+    f.close()
+
+    tweet_message_file_size = os.stat(file_path).st_size
+    print(f"Saved '{tweet_message_file_size}' bytes of the tweet message to local file-system at '{file_path}'")
+    return file_path
+
+
+def send_to_ipfs(time, tweet_message):
+    # https://discuss.ipfs.io/t/how-to-add-multiple-files-not-a-directory-with-one-api-request/998/2
+    tweet_message_local_file_path = write_file(time, tweet_message)
+
+    print(f"Connecting to IPFS to persist the tweet!")
+    ipfs_client = make_ipfs_client()
+    tweet_ipfs_response = ipfs_client.add(tweet_message_local_file_path)
+
+    # Get the hash to be returned!
+    tweet_ipfs_cid_hash = tweet_ipfs_response['Hash']
+    print(f"Recorded tweet from {time} to IPFS as CID: {tweet_message}")
+
+    persisted_ipfs_tweet_msg = ipfs_client.cat(tweet_ipfs_cid_hash)
+    print(f"IPFS message: {persisted_ipfs_tweet_msg}")
+
+    # Validate first if it was correctly sent!
+    if persisted_ipfs_tweet_msg != tweet_message:
+        # When saving in IPFS, the string is encoded and so are the emojis
+        print(f"WARNING: tweet message '{tweet_message}' was retrieved from IPFS differently as '{persisted_ipfs_tweet_msg}': Emojis encoded?")
+
+    print(f"The same tweet was saved in the ⛓️ blockchain IFPS CID={tweet_ipfs_cid_hash}")
+    print(f"Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/{tweet_ipfs_cid_hash}")
+    return tweet_ipfs_cid_hash
+
+
+def make_tweet_message(date_original_format, perfect_time, full_time, tweet_cid=None):
+  if tweet_cid:
+    # This is the message to be tweeted
+    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
+
+    if is_time_palindrome(full_time):
+      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+
+  else:
+    # This is the message to be tweeted
+    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+
+    if is_time_palindrome(full_time):
+      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+
+  return perfect_timed_msg
+
+
 def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   # Generate the hash tag based on the time
   hash_tag = "#" + get_tokenized_time(perfect_time)
@@ -166,22 +226,34 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
 
   full_time = f"{get_current_date_token()}{perfect_time}"
 
+  # Format the value for better display
   date_original_format = get_current_date().replace("-", "/")
 
-  # This is the message to be tweeted
-  perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time}"
+  # the tweet message
+  perfect_timed_msg = make_tweet_message(date_original_format, perfect_time, full_time)
 
-  if is_time_palindrome(full_time):
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time}"
+  tweet_ipfs_cid = None
+  try:
+    print("")
+    print("Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)")
+    tweet_ipfs_cid = send_to_ipfs(full_time, perfect_timed_msg)
+    print(f"IPFS Success: tweet CID={tweet_ipfs_cid}")
+
+  except Exception as err:
+    print("An exception occurred while persisting tweet in IPFS: %s" % err)
+
+  # Update the message with the IPFS CID of the tweet as a proof of record
+  perfect_timed_msg_with_cid = make_tweet_message(date_original_format, perfect_time, full_time, tweet_ipfs_cid)
 
   try:
-    print("=---> Twitting: '%s'" % (perfect_timed_msg))
+    print("=---> Twitting: '%s'" % perfect_timed_msg_with_cid)
     print("")
-    tweet(tweeter_credentials, perfect_timed_msg)
-    print("Success!!!")
+    tweet(tweeter_credentials, perfect_timed_msg_with_cid)
+    print("Tweet Success!!!")
 
   except Exception as err:
     print("An exception occurred while sending tweet: %s" % err)
+
 
 def authenticate_on_twitter_env(tweeter_credentials):
   # This is enabled by setting the keys 
@@ -200,7 +272,11 @@ def tweet(tweeter_credentials, status_message):
   api = authenticate_on_twitter_env(tweeter_credentials)
 
   # Create a tweet
-  api.update_status(status_message)
+  tweet_response = api.update_status(status_message)
+  tweet_id = tweet_response.id_str
+  logged_user = tweeter_credentials["MY_SCREEN_NAME"]
+  tweet_url = f"https://twitter.com/{logged_user}/status/{tweet_id}"
+  print(f"Tweed saved at {tweet_url}")
 
 
 def is_time_palindrome(time):
