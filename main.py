@@ -226,22 +226,34 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
 
   full_time = f"{get_current_date_token()}{perfect_time}"
 
+  # Format the value for better display
   date_original_format = get_current_date().replace("-", "/")
 
-  # This is the message to be tweeted
-  perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time}"
+  # the tweet message
+  perfect_timed_msg = make_tweet_message(date_original_format, perfect_time, full_time)
 
-  if is_time_palindrome(full_time):
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)}: only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain #IPFS ⛓ #forever #nft #timecapsule #nft{full_time} #{full_time}"
+  tweet_ipfs_cid = None
+  try:
+    print("")
+    print("Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)")
+    tweet_ipfs_cid = send_to_ipfs(full_time, perfect_timed_msg)
+    print(f"IPFS Success: tweet CID={tweet_ipfs_cid}")
+
+  except Exception as err:
+    print("An exception occurred while persisting tweet in IPFS: %s" % err)
+
+  # Update the message with the IPFS CID of the tweet as a proof of record
+  perfect_timed_msg_with_cid = make_tweet_message(date_original_format, perfect_time, full_time, tweet_ipfs_cid)
 
   try:
-    print("=---> Twitting: '%s'" % (perfect_timed_msg))
+    print("=---> Twitting: '%s'" % perfect_timed_msg_with_cid)
     print("")
-    tweet(tweeter_credentials, perfect_timed_msg)
-    print("Success!!!")
+    tweet(tweeter_credentials, perfect_timed_msg_with_cid)
+    print("Tweet Success!!!")
 
   except Exception as err:
     print("An exception occurred while sending tweet: %s" % err)
+
 
 def authenticate_on_twitter_env(tweeter_credentials):
   # This is enabled by setting the keys 
