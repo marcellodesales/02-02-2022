@@ -189,3 +189,80 @@ Token 2022-02-02 00:00:02  > Current time is 2022-02-03 20:45:13.920682
 Success!!!
 Finished attempting to tweets
 ```
+
+# Blockchain Integration - IPFS
+
+* We use IPFS to persist the messages before tweeting them. 
+* Once written, the content will then be able to be cross-checked.
+
+```
+Current time: 02-20-2022 at 22:22:22  Waiting for 02-20-2022 at 22:22:22
+
+########### Unique ##########
+
+* Will tweet at 22:22:22
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02202022222222.tweet
+Saved '273' bytes of the tweet message to local file-system at 'logs/02202022222222.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02202022222222 to IPFS as CID: This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222222 #02202022222222'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/20/2022 at \xe2\x8f\xb0 22:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02202022222222 #02202022222222'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+IPFS Success: tweet CID=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022222222 #IPFS #nft ⛓ #cid_QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1495645052952989696
+Tweet Success!!!
+
+Finished attempting to tweets
+```
+
+## Fetching the IPFS CID of a Tweet
+
+* We have saved them in the logs and correlated the time with the tweet.
+
+```
+$ cat logs/02202022.log | grep 02202022222222 | grep cid_ | grep -p '#cid.*'   
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 
+      represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 
+      🕑 #timecapsule #02202022222222 #IPFS #nft ⛓ #cid_QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy'
+```
+
+* Just, just a few shell manipulations we can have the value for reference.
+
+```
+$ cat logs/02202022.log | grep 02202022222222 | grep cid_ | grep -p '#cid.*' | \
+      awk -F"cid_" '{ print $2 }' | awk -F"'" '{ print $1 }'
+QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+```
+
+## Inspect the IPFS Node
+
+* You have the option to access the node or to use the IPFS APIs
+* Let's first look for the content from the node
+
+```
+$ docker exec -ti ipfs-pinner_ipfs_1 ash
+/ # ipfs cat QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy
+This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222
+```
+
+* Then, the second option is to call the IPFS HTTP REST API
+
+```
+$ curl -X POST "http://127.0.0.1:15001/api/v0/block/get?arg=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy"
+
+�This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 22:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022222222 #02202022222222�
+```
+
+* You can retrieve other matching information such as the size of the message
+
+> **NOTE**: The size of the hash is longer because the emojis are encoded to UTF-8 as shown in the logs above.
+
+```
+$ curl -X POST "http://127.0.0.1:15001/api/v0/block/stat?arg=QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy"
+{"Key":"QmWfQLTH1ChSFfFjQQMxCoRW9KaMgJgsDKpHuZmiddFVCy","Size":284}
+```
