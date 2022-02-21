@@ -13,6 +13,27 @@ There will be also NFT entries in different blockchains for time capsule purpose
 to generate the keys and request your tweeter developer account to be "Elevated".
 > First, make sure to get the Elevate account type approved!
 
+The bot now supports writing the tweet to IPFS before sending the tweet as a guarantee of censorship resistence :)
+
+> **IPFS**: At the moment, IFPS Node must be version `0.7.0` as the python client hasn't been updated to support latest 0.12.0.
+
+```
+* Will tweet at 21:49:00
+
+=> Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+* Saving tweet to local file-system at logs/02202022214900.tweet
+* Saved '273' bytes of the tweet message to local file-system at 'logs/02202022214900.tweet'
+* Connecting to IPFS to persist the tweet!
+* Recorded tweet from 02202022214900 to IPFS as CID: "This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 21:49:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft02202022214900 #02202022214900"
+
+* The same tweet was saved in the ⛓️ blockchain IFPS CID=QmeKvLZzcgzov8jMW1Xea9oJoEKgbyQnQuLu2XjBLH2NiQ
+* Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmeKvLZzcgzov8jMW1Xea9oJoEKgbyQnQuLu2XjBLH2NiQ
+
+=> Twitting: 'This is a rare tweet time capsule on 📅 02/20/2022 at ⏰ 21:49:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #02202022214900 #IPFS #nft ⛓ #cid_QmeKvLZzcgzov8jMW1Xea9oJoEKgbyQnQuLu2XjBLH2NiQ'
+
+* Tweed saved at https://twitter.com/marcellodesales/status/1495636655595667457
+```
+
 ## Local Config
 
 The instructions on how to collect the API keys are in https://github.com/piroor/tweet.sh/issues/35#issuecomment-1027686153
