@@ -9,7 +9,7 @@ from supercash.platform.messaging.twitter_proxy_client import TwitterProxyClient
 from supercash.platform.scheduler.prime_time_calculator import PrimeTimeCalculator
 from supercash.platform.scheduler.alarm_scheduler import AlarmScheduler
 from supercash.platform.util.date_formatter import DateFormatter
-
+from supercash.platform.messaging.twitter_message_formatter import TwitterMessageFormatter
 
 def wait_for_next_time_after_delay(ipfs_client_proxy, twitter_proxy_client, prime_time_calculator):
   # Get the next time from the current list
@@ -97,25 +97,6 @@ def send_to_ipfs(ipfs_client_proxy, time, tweet_message):
     return tweet_ipfs_cid_hash
 
 
-def make_tweet_message(date_original_format, perfect_time, full_time, tweet_cid=None):
-  # TODO: Add #late if in late mode
-  if tweet_cid:
-    # This is the message to be tweeted
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
-
-    if is_time_palindrome(full_time):
-      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
-
-  else:
-    # This is the message to be tweeted
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
-
-    if is_time_palindrome(full_time):
-      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
-
-  return perfect_timed_msg
-
-
 def tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, perfect_time):
   # Generate the hash tag based on the time
   # TODO: Correlate the tweet with IPFS after by using a folder!
@@ -132,7 +113,7 @@ def tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, perfect_time)
   date_original_format = DateFormatter.get_current_date().replace("-", "/")
 
   # the tweet message
-  perfect_timed_msg = make_tweet_message(date_original_format, perfect_time, full_time)
+  perfect_timed_msg = TwitterMessageFormatter.make_tweet_message(date_original_format, perfect_time, full_time)
 
   tweet_ipfs_cid = None
   try:
@@ -145,7 +126,7 @@ def tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, perfect_time)
     print("An exception occurred while persisting tweet in IPFS: %s" % err)
 
   # Update the message with the IPFS CID of the tweet as a proof of record
-  perfect_timed_msg_with_cid = make_tweet_message(date_original_format, perfect_time, full_time, tweet_ipfs_cid)
+  perfect_timed_msg_with_cid = TwitterMessageFormatter.make_tweet_message(date_original_format, perfect_time, full_time, tweet_ipfs_cid)
 
   try:
     print("=---> Twitting: '%s'" % perfect_timed_msg_with_cid)
@@ -155,11 +136,6 @@ def tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, perfect_time)
 
   except Exception as err:
     print("An exception occurred while sending tweet: %s" % err)
-
-
-def is_time_palindrome(time):
-    # https://www.geeksforgeeks.org/python-list/
-    return time == time[::-1]
 
 
 def open_tweet_tabs():
