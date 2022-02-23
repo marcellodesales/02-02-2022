@@ -8,11 +8,7 @@ from supercash.platform.blockchain.ipfs_proxy_client import IPFSClientProxy
 from supercash.platform.messaging.twitter_proxy_client import TwitterProxyClient
 from supercash.platform.scheduler.prime_time_calculator import PrimeTimeCalculator
 from supercash.platform.scheduler.alarm_scheduler import AlarmScheduler
-
-
-def get_tokenized_time(specified_time):
-  # Just format the time from 001122 => 00:11:22
-  return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
+from supercash.platform.util.date_formatter import DateFormatter
 
 
 def wait_for_next_time_after_delay(ipfs_client_proxy, twitter_proxy_client, prime_time_calculator):
@@ -24,7 +20,7 @@ def wait_for_next_time_after_delay(ipfs_client_proxy, twitter_proxy_client, prim
   print(f"All delayed time list {current_delayed_list}")
 
   for next_perfect_time in current_delayed_list:
-    print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
+    print("This is the next time: %s" % (DateFormatter.get_tokenized_time(next_perfect_time)))
 
     # wait until the current time matches a unique time
     # current_time = ""
@@ -32,7 +28,7 @@ def wait_for_next_time_after_delay(ipfs_client_proxy, twitter_proxy_client, prim
     current_time = next_perfect_time
 
     # Now, it will break the time
-    print(f"Current time: {AlarmScheduler.get_current_date()} at {get_tokenized_time(current_time)}  Waiting for {AlarmScheduler.get_current_date()} at {get_tokenized_time(next_perfect_time)}")
+    print(f"Current time: {DateFormatter.get_current_date()} at {DateFormatter.get_tokenized_time(current_time)}  Waiting for {DateFormatter.get_current_date()} at {DateFormatter.get_tokenized_time(next_perfect_time)}")
 
     # wait a couple of milliseconds https://pynative.com/python-random-randrange/
     wait_seconds = random.randrange(5, 20)
@@ -49,15 +45,15 @@ def wait_for_next_time(ipfs_client_proxy, twitter_proxy_client, prime_time_calcu
   print(f"All times list {current_list}")
 
   for next_perfect_time in current_list:
-    print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
+    print("This is the next time: %s" % (DateFormatter.get_tokenized_time(next_perfect_time)))
 
     # wait until the current time matches a unique time
     current_time = ""
     while current_time != next_perfect_time:
-      current_time = AlarmScheduler.make_current_time_token()
+      current_time = DateFormatter.make_current_time_token()
 
       # Now, it will break the time
-      print(f"Current time: {AlarmScheduler.get_current_date()} at {get_tokenized_time(current_time)}  Waiting for {AlarmScheduler.get_current_date()} at {get_tokenized_time(next_perfect_time)}")
+      print(f"Current time: {DateFormatter.get_current_date()} at {DateFormatter.get_tokenized_time(current_time)}  Waiting for {DateFormatter.get_current_date()} at {DateFormatter.get_tokenized_time(next_perfect_time)}")
 
       # wait a couple of milliseconds
       sleep(0.4)
@@ -105,37 +101,35 @@ def make_tweet_message(date_original_format, perfect_time, full_time, tweet_cid=
   # TODO: Add #late if in late mode
   if tweet_cid:
     # This is the message to be tweeted
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
+    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
 
     if is_time_palindrome(full_time):
-      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
 
   else:
     # This is the message to be tweeted
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
 
     if is_time_palindrome(full_time):
-      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
 
   return perfect_timed_msg
 
 
 def tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, perfect_time):
   # Generate the hash tag based on the time
-  hash_tag = "#" + get_tokenized_time(perfect_time)
-
   # TODO: Correlate the tweet with IPFS after by using a folder!
 
   print("")
   print("########### Unique ##########")
   print("")
-  print("* Will tweet at %s" % get_tokenized_time(perfect_time))
+  print(f"* Will tweet at {DateFormatter.get_tokenized_time(perfect_time)}")
   print("")
 
   full_time = f"{AlarmScheduler.get_current_date_token()}{perfect_time}"
 
   # Format the value for better display
-  date_original_format = AlarmScheduler.get_current_date().replace("-", "/")
+  date_original_format = DateFormatter.get_current_date().replace("-", "/")
 
   # the tweet message
   perfect_timed_msg = make_tweet_message(date_original_format, perfect_time, full_time)
@@ -172,14 +166,14 @@ def open_tweet_tabs():
   print("Will open tabs for your timely tweets...")
 
   for next_perfect_time in PrimeTimeCalculator.get_current_list():
-    print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
+    print("This is the next time: %s" % (DateFormatter.get_tokenized_time(next_perfect_time)))
 
     print("")
     print("########### Unique !!!!! ----")
     print("")
-    print("* Will tweet at %s" % (get_tokenized_time(next_perfect_time)))
+    print("* Will tweet at %s" % (DateFormatter.get_tokenized_time(next_perfect_time)))
     print("")
-    perfect_timed_msg = "This is the unique tweet at 02/02/2022 at %s. #nft #timecapsule #nft02022022%s" % (get_tokenized_time(next_perfect_time), next_perfect_time)
+    perfect_timed_msg = "This is the unique tweet at 02/02/2022 at %s. #nft #timecapsule #nft02022022%s" % (DateFormatter.get_tokenized_time(next_perfect_time), next_perfect_time)
 
     # wait a couple of milliseconds
     sleep(3)

@@ -13,6 +13,7 @@
 # limitations under the License.
 
 from datetime import datetime
+from supercash.platform.util.date_formatter import DateFormatter
 
 
 class AlarmScheduler:
@@ -29,7 +30,7 @@ class AlarmScheduler:
         last_seen_time = ""
         for prime_time in current_list:
             # Current time from the token
-            time_from_token = AlarmScheduler.get_time_from_token(prime_time)
+            time_from_token = DateFormatter.get_time_from_token(prime_time)
 
             # Compare with the current time
             current_time = datetime.now()
@@ -41,26 +42,9 @@ class AlarmScheduler:
 
         return last_seen_time
 
-    @staticmethod
-    def get_current_date():
-        return "02-22-2022"
-
-    @staticmethod
-    def get_time_from_token(time_token):
-        # https://stackabuse.com/converting-strings-to-datetime-in-python/
-        date_time_str = "%s %s" % (AlarmScheduler.get_current_date(), AlarmScheduler.get_tokenized_time(time_token))
-        return datetime.strptime(date_time_str, '%m-%d-%Y %H:%M:%S')
-
-    @staticmethod
-    def get_tokenized_time(specified_time):
-        return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
     @staticmethod
     def get_current_date_token():
-        return AlarmScheduler.get_current_date().replace("-", "")
+        return DateFormatter.get_current_date().replace("-", "")
 
-    @staticmethod
-    def make_current_time_token():
-      # https://www.programiz.com/python-programming/datetime/current-datetime
-      return datetime.now().strftime("%H%M%S")
 
