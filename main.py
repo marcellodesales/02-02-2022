@@ -74,17 +74,18 @@ def unique(times):
   return unique_list
 
 
-def get_current_list():
+def get_current_list(missed_time=False):
   all_combinations = make_combinations() 
 
   # Remove all the elements before that time
   exclude_past_time(get_next_time(all_combinations), all_combinations)
 
   # For missed entries, use the set to fix it case
-  # return ['000000', '000002', '000020', '000022', '000200', '000202', '000220', '000222', '002000',
-  # '002002', '002020', '002022', '002200', '002202', '002220', '002222', '020000', '020002', '020020',
-  # '020022', '020200', '020202', '020220', '020222', '022000', '022002', '022020', '022022', '022200',
-  # '022202', '022220', '022222']
+  if missed_time:
+    return ['000000', '000002', '000020', '000022', '000200', '000202', '000220', '000222', '002000',
+    '002002', '002020', '002022', '002200', '002202', '002220', '002222', '020000', '020002', '020020',
+    '020022', '020200', '020202', '020220', '020222', '022000', '022002', '022020', '022022', '022200',
+    '022202', '022220', '022222']
 
   # return all the past values or the test one when provided
   return [TWEET_TEST_TIME] if TWEET_TEST_TIME else all_combinations
@@ -156,10 +157,12 @@ def get_tokenized_time(specified_time):
   return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
 
-def wait_for_next_time(ipfs_config, tweeter_credentials):
+def wait_for_next_time_after_delay(ipfs_config, tweeter_credentials):
   # Get the next time from the current list
 
-  print(f"All times list {get_current_list()}")
+  # This is when the bot missed the appointment at 00h-2am
+  delayed = True
+  print(f"All times list {get_current_list(delayed)}")
 
   for next_perfect_time in get_current_list():
     print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
@@ -387,6 +390,9 @@ def open_tweet_tabs():
   print("Finished with all the tweets to open tabs!")     
 
 def main():
+  # Just course correction if the bot is sleeping
+  MISSED_TIME = False
+
   if MODE == "open-tabs":
     open_tweet_tabs()
 
@@ -397,11 +403,18 @@ def main():
   else:
     ipfs_config = get_ipfs_config()
     print("=======  Sending tweets backed by IPFS ========")
+    print("")
     print(f"* HOST: {ipfs_config['host']}")
-    print(f"* HOST: {ipfs_config['port']}")
+    print(f"* PORT: {ipfs_config['port']}")
+    print("")
 
     tweeter_credentials = load_tweeter_credentials()
-    wait_for_next_time(ipfs_config, tweeter_credentials)
+
+    if MISSED_TIME:
+      wait_for_next_time_after_delay(ipfs_config, tweeter_credentials)
+
+    else:
+      wait_for_next_time(ipfs_config, tweeter_credentials)
 
   print("")
   print("Finished attempting to tweets")
