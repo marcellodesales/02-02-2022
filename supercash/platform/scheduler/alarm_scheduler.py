@@ -42,7 +42,6 @@ class AlarmScheduler:
 
         return last_seen_time
 
-
     @staticmethod
     def get_current_date_token():
         return DateFormatter.get_current_date().replace("-", "")
