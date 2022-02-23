@@ -202,9 +202,21 @@ def open_tweet_tabs():
   print("Finished with all the tweets to open tabs!")
 
 def main():
+  # To set your enviornment variables in your terminal run the following line:
+  # MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
+  # MODE=tweet     - it will tweet based on the credentials provided as volume
+  # MODE=test      - it will run the tweet for the test
+  # MODE=list      - lists all the nfts
+  MODE = os.environ.get("MODE", "open-tabs")
+  TWEET_TEST_TIME = os.environ.get("TWEET_TEST_TIME", None)
+  if MODE == "test" and len(TWEET_TEST_TIME) != 6:
+    TWEET_TEST_TIME = None
+    MODE = "open-tabs"
+
   # Just course correction if the bot is sleeping
   MISSED_TIME = False
 
+  # Configure the twitter client based on the config file
   tweepy_config = '~/.tweet.client.key'
   twitter_proxy_client = TwitterProxyClient(tweepy_config)
 
