@@ -9,14 +9,32 @@ import os
 import webbrowser
 import urllib.parse
 import ipfshttpclient
+import random
+
+
+# Just run against an IPFS server running a compatible version
+# docker ps | grep 15001
+# 5c316d790864   ipfs/go-ipfs:v0.7.0 "/sbin/tini -- /usr/…"   49 seconds ago   Up 47 seconds
+# 0.0.0.0:14001->4001/tcp, 0.0.0.0:14001->4001/udp, 0.0.0.0:15001->5001/tcp, 0.0.0.0:18080->8080/tcp, 0.0.0.0:18081->8081/tcp
+def get_ipfs_config():
+  return {
+    "host": "localhost",
+    "port": 15001
+  }
+
+
+def make_ipfs_client(ipfs_config):
+  # Make sure the IPFS service is running at the configred values
+  return ipfshttpclient.connect(addr=f"/dns/{ipfs_config['host']}/tcp/{ipfs_config['port']}/http")
 
 
 def get_current_date():
-  return "02-20-2022"
+  return "02-22-2022"
 
 
 def get_current_date_token():
   return get_current_date().replace("-", "")
+
 
 # To set your enviornment variables in your terminal run the following line:
 # MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
@@ -56,11 +74,18 @@ def unique(times):
   return unique_list
 
 
-def get_current_list():
+def get_current_list(missed_time=False):
   all_combinations = make_combinations() 
 
   # Remove all the elements before that time
   exclude_past_time(get_next_time(all_combinations), all_combinations)
+
+  # For missed entries, use the set to fix it case
+  if missed_time:
+    return ['000000', '000002', '000020', '000022', '000200', '000202', '000220', '000222', '002000',
+    '002002', '002020', '002022', '002200', '002202', '002220', '002222', '020000', '020002', '020020',
+    '020022', '020200', '020202', '020220', '020222', '022000', '022002', '022020', '022022', '022200',
+    '022202', '022220', '022222']
 
   # return all the past values or the test one when provided
   return [TWEET_TEST_TIME] if TWEET_TEST_TIME else all_combinations
@@ -132,10 +157,36 @@ def get_tokenized_time(specified_time):
   return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
 
-def wait_for_next_time(tweeter_credentials):
+def wait_for_next_time_after_delay(ipfs_config, tweeter_credentials):
   # Get the next time from the current list
 
-  print(f"All times list {get_current_list()}")
+  # This is when the bot missed the appointment at 00h-2am
+  delayed = True
+  print(f"All times list {get_current_list(delayed)}")
+
+  for next_perfect_time in get_current_list():
+    print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
+
+    # wait until the current time matches a unique time
+    # current_time = ""
+    # while current_time != next_perfect_time:
+    current_time = next_perfect_time
+
+    # Now, it will break the time
+    print(f"Current time: {get_current_date()} at {get_tokenized_time(current_time)}  Waiting for {get_current_date()} at {get_tokenized_time(next_perfect_time)}")
+
+    # wait a couple of milliseconds https://pynative.com/python-random-randrange/
+    wait_seconds = random.randrange(5, 20)
+    print(f"=> Waiting {wait_seconds}s")
+    sleep(wait_seconds)
+
+    # Attemtp to send the tweet at this specified time
+    tweet_at_perfect_time(ipfs_config, tweeter_credentials, next_perfect_time)
+
+def wait_for_next_time(ipfs_config, tweeter_credentials):
+  # Get the next time from the current list
+
+  print(f"All times list {get_current_list(ipfs_config)}")
 
   for next_perfect_time in get_current_list():
     print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
@@ -152,11 +203,7 @@ def wait_for_next_time(tweeter_credentials):
       sleep(0.4)
 
     # Attemtp to send the tweet at this specified time
-    tweet_at_perfect_time(tweeter_credentials, next_perfect_time)
-
-
-def make_ipfs_client():
-  return ipfshttpclient.connect(addr="/dns/localhost/tcp/15001/http")
+    tweet_at_perfect_time(ipfs_config, tweeter_credentials, next_perfect_time)
 
 
 def write_file(time, tweet_message):
@@ -171,12 +218,12 @@ def write_file(time, tweet_message):
     return file_path
 
 
-def send_to_ipfs(time, tweet_message):
+def send_to_ipfs(ipfs_config, time, tweet_message):
     # https://discuss.ipfs.io/t/how-to-add-multiple-files-not-a-directory-with-one-api-request/998/2
     tweet_message_local_file_path = write_file(time, tweet_message)
 
     print(f"Connecting to IPFS to persist the tweet!")
-    ipfs_client = make_ipfs_client()
+    ipfs_client = make_ipfs_client(ipfs_config)
     tweet_ipfs_response = ipfs_client.add(tweet_message_local_file_path)
 
     # Get the hash to be returned!
@@ -199,22 +246,22 @@ def send_to_ipfs(time, tweet_message):
 def make_tweet_message(date_original_format, perfect_time, full_time, tweet_cid=None):
   if tweet_cid:
     # This is the message to be tweeted
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
+    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
 
     if is_time_palindrome(full_time):
-      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #late #nft #timecapsule #nft{full_time} #{full_time}"
 
   else:
     # This is the message to be tweeted
-    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+    perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft{full_time} #{full_time}"
 
     if is_time_palindrome(full_time):
-      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+      perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft{full_time} #{full_time}"
 
   return perfect_timed_msg
 
 
-def tweet_at_perfect_time(tweeter_credentials, perfect_time):
+def tweet_at_perfect_time(ipfs_config, tweeter_credentials, perfect_time):
   # Generate the hash tag based on the time
   hash_tag = "#" + get_tokenized_time(perfect_time)
 
@@ -238,7 +285,7 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   try:
     print("")
     print("Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)")
-    tweet_ipfs_cid = send_to_ipfs(full_time, perfect_timed_msg)
+    tweet_ipfs_cid = send_to_ipfs(ipfs_config, full_time, perfect_timed_msg)
     print(f"IPFS Success: tweet CID={tweet_ipfs_cid}")
 
   except Exception as err:
@@ -365,6 +412,9 @@ def open_tweet_tabs():
   print("Finished with all the tweets to open tabs!")     
 
 def main():
+  # Just course correction if the bot is sleeping
+  MISSED_TIME = False
+
   if MODE == "open-tabs":
     open_tweet_tabs()
 
@@ -373,8 +423,20 @@ def main():
     find_my_nft_tweets(tweeter_credentials)
 
   else:
+    ipfs_config = get_ipfs_config()
+    print("=======  Sending tweets backed by IPFS ========")
+    print("")
+    print(f"* HOST: {ipfs_config['host']}")
+    print(f"* PORT: {ipfs_config['port']}")
+    print("")
+
     tweeter_credentials = load_tweeter_credentials()
-    wait_for_next_time(tweeter_credentials)
+
+    if MISSED_TIME:
+      wait_for_next_time_after_delay(ipfs_config, tweeter_credentials)
+
+    else:
+      wait_for_next_time(ipfs_config, tweeter_credentials)
 
   print("")
   print("Finished attempting to tweets")
