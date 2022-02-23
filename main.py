@@ -183,6 +183,28 @@ def wait_for_next_time_after_delay(ipfs_config, tweeter_credentials):
     # Attemtp to send the tweet at this specified time
     tweet_at_perfect_time(ipfs_config, tweeter_credentials, next_perfect_time)
 
+def wait_for_next_time(ipfs_config, tweeter_credentials):
+  # Get the next time from the current list
+
+  print(f"All times list {get_current_list(ipfs_config)}")
+
+  for next_perfect_time in get_current_list():
+    print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
+
+    # wait until the current time matches a unique time
+    current_time = ""
+    while current_time != next_perfect_time:
+      current_time = make_current_time_token()
+
+      # Now, it will break the time
+      print(f"Current time: {get_current_date()} at {get_tokenized_time(current_time)}  Waiting for {get_current_date()} at {get_tokenized_time(next_perfect_time)}")
+
+      # wait a couple of milliseconds
+      sleep(0.4)
+
+    # Attemtp to send the tweet at this specified time
+    tweet_at_perfect_time(ipfs_config, tweeter_credentials, next_perfect_time)
+
 
 def write_file(time, tweet_message):
     file_path = f"logs/{time}.tweet"
