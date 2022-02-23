@@ -18,6 +18,7 @@ def get_ipfs_config():
     "port": 15001
   }
 
+
 def make_ipfs_client(ipfs_config):
   # Make sure the IPFS service is running at the configred values
   # $ docker ps | grep 15001
@@ -33,6 +34,7 @@ def get_current_date():
 
 def get_current_date_token():
   return get_current_date().replace("-", "")
+
 
 # To set your enviornment variables in your terminal run the following line:
 # MODE=open-tabs - it will open tabs for the next tweets. This is useful if your acount is still not approved
@@ -148,7 +150,7 @@ def get_tokenized_time(specified_time):
   return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
 
-def wait_for_next_time(tweeter_credentials):
+def wait_for_next_time(ipfs_config, tweeter_credentials):
   # Get the next time from the current list
 
   print(f"All times list {get_current_list()}")
@@ -187,12 +189,12 @@ def write_file(time, tweet_message):
     return file_path
 
 
-def send_to_ipfs(time, tweet_message):
+def send_to_ipfs(ipfs_config, time, tweet_message):
     # https://discuss.ipfs.io/t/how-to-add-multiple-files-not-a-directory-with-one-api-request/998/2
     tweet_message_local_file_path = write_file(time, tweet_message)
 
     print(f"Connecting to IPFS to persist the tweet!")
-    ipfs_client = make_ipfs_client()
+    ipfs_client = make_ipfs_client(ipfs_config)
     tweet_ipfs_response = ipfs_client.add(tweet_message_local_file_path)
 
     # Get the hash to be returned!
@@ -254,7 +256,7 @@ def tweet_at_perfect_time(tweeter_credentials, perfect_time):
   try:
     print("")
     print("Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)")
-    tweet_ipfs_cid = send_to_ipfs(full_time, perfect_timed_msg)
+    tweet_ipfs_cid = send_to_ipfs(ipfs_config, full_time, perfect_timed_msg)
     print(f"IPFS Success: tweet CID={tweet_ipfs_cid}")
 
   except Exception as err:
@@ -389,8 +391,13 @@ def main():
     find_my_nft_tweets(tweeter_credentials)
 
   else:
+    ipfs_config = get_ipfs_config()
+    print("=======  Sending tweets backed by IPFS ========")
+    print(f"* HOST: {ipfs_config['host']}")
+    print(f"* HOST: {ipfs_config['port']}")
+
     tweeter_credentials = load_tweeter_credentials()
-    wait_for_next_time(tweeter_credentials)
+    wait_for_next_time(ipfs_config, tweeter_credentials)
 
   print("")
   print("Finished attempting to tweets")
