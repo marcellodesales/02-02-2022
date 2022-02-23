@@ -28,16 +28,31 @@ class TwitterMessageFormatter:
         # TODO: Add #late if in late mode
         if tweet_cid:
             # This is the message to be tweeted
-            perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the #blockchain! 🕑 #timecapsule #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
+            perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at " \
+                                f"⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with " \
+                                f"only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it " \
+                                f"in the #blockchain! 🕑 #timecapsule #{full_time} #IPFS #nft ⛓ #cid_{tweet_cid}"
 
             if TwitterMessageFormatter.is_time_palindrome(full_time):
-                perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+                perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at " \
+                                    f"⏰ {DateFormatter.get_tokenized_time(perfect_time)} represented with " \
+                                    f"only 2 digits 🤖 Look @marcellodesales, I found the legendary " \
+                                    f"#palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #nft #timecapsule " \
+                                    f"#nft{full_time} #{full_time}"
 
         else:
             # This is the message to be tweeted
-            perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+            perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at " \
+                                f"⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on " \
+                                f"its representation! 🤖 My creator @marcellodesales told me to watch for " \
+                                f"palindrome times! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule " \
+                                f"#nft{full_time} #{full_time}"
 
             if TwitterMessageFormatter.is_time_palindrome(full_time):
-                perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at ⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #nft #timecapsule #nft{full_time} #{full_time}"
+                perfect_timed_msg = f"This is a rare tweet time capsule on 📅 {date_original_format} at " \
+                                    f"⏰ {DateFormatter.get_tokenized_time(perfect_time)} only 2 digits on " \
+                                    f"its representation! 🤖 Look, @marcellodesales! I found the legendary " \
+                                    f"#palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #nft " \
+                                    f"#timecapsule #nft{full_time} #{full_time}"
 
         return perfect_timed_msg
