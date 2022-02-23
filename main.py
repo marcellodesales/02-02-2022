@@ -1,17 +1,14 @@
 import itertools
 import json
-import tweepy
 from datetime import datetime
 from time import sleep
-import pytz
-from pyjavaproperties import Properties
 import os
 import webbrowser
 import urllib.parse
 import random
 
 from supercash.platform.blockchain.ipfs_proxy_client import IPFSClientProxy
-
+from supercash.platform.messaging.twitter_proxy_client import TwitterProxyClient
 
 def get_current_date():
   return "02-22-2022"
@@ -129,7 +126,7 @@ def get_tokenized_time(specified_time):
   return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
 
-def wait_for_next_time_after_delay(ipfs_client_proxy, tweeter_credentials):
+def wait_for_next_time_after_delay(ipfs_client_proxy, twitter_proxy_client):
   # Get the next time from the current list
 
   # This is when the bot missed the appointment at 00h-2am
@@ -154,9 +151,9 @@ def wait_for_next_time_after_delay(ipfs_client_proxy, tweeter_credentials):
     sleep(wait_seconds)
 
     # Attemtp to send the tweet at this specified time
-    tweet_at_perfect_time(ipfs_client_proxy, tweeter_credentials, next_perfect_time)
+    tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, next_perfect_time)
 
-def wait_for_next_time(ipfs_client_proxy, tweeter_credentials):
+def wait_for_next_time(ipfs_client_proxy, twitter_proxy_client):
   # Get the next time from the current list
 
   current_list  = get_current_list()
@@ -177,7 +174,7 @@ def wait_for_next_time(ipfs_client_proxy, tweeter_credentials):
       sleep(0.4)
 
     # Attempt to send the tweet at this specified time
-    tweet_at_perfect_time(ipfs_client_proxy, tweeter_credentials, next_perfect_time)
+    tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, next_perfect_time)
 
 
 def write_file(time, tweet_message):
@@ -233,7 +230,7 @@ def make_tweet_message(date_original_format, perfect_time, full_time, tweet_cid=
   return perfect_timed_msg
 
 
-def tweet_at_perfect_time(ipfs_client_proxy, tweeter_credentials, perfect_time):
+def tweet_at_perfect_time(ipfs_client_proxy, twitter_proxy_client, perfect_time):
   # Generate the hash tag based on the time
   hash_tag = "#" + get_tokenized_time(perfect_time)
 
@@ -269,77 +266,16 @@ def tweet_at_perfect_time(ipfs_client_proxy, tweeter_credentials, perfect_time):
   try:
     print("=---> Twitting: '%s'" % perfect_timed_msg_with_cid)
     print("")
-    tweet(tweeter_credentials, perfect_timed_msg_with_cid)
+    twitter_proxy_client.tweet(perfect_timed_msg_with_cid)
     print("Tweet Success!!!")
 
   except Exception as err:
     print("An exception occurred while sending tweet: %s" % err)
 
 
-def authenticate_on_twitter_env(tweeter_credentials):
-  # This is enabled by setting the keys 
-  # https://developer.twitter.com/en/portal/projects/1488768050035773444/apps/23291738/auth-settings
-  # ATTENTION: The key must be re-generated when the environment is re-created. Make sure to choose production!
-  auth = tweepy.OAuth1UserHandler(
-    tweeter_credentials["CONSUMER_KEY"], tweeter_credentials["CONSUMER_SECRET"],
-    tweeter_credentials["ACCESS_TOKEN"], tweeter_credentials["ACCESS_TOKEN_SECRET"]
-  )
-
-  # Create API object
-  return tweepy.API(auth)
-
-
-def tweet(tweeter_credentials, status_message):
-  api = authenticate_on_twitter_env(tweeter_credentials)
-
-  # Create a tweet
-  tweet_response = api.update_status(status_message)
-  tweet_id = tweet_response.id_str
-  logged_user = tweeter_credentials["MY_SCREEN_NAME"]
-  tweet_url = f"https://twitter.com/{logged_user}/status/{tweet_id}"
-  print(f"Tweed saved at {tweet_url}")
-
-
 def is_time_palindrome(time):
     # https://www.geeksforgeeks.org/python-list/
     return time == time[::-1]
-
-
-def find_my_nft_tweets(tweeter_credentials):
-  api = authenticate_on_twitter_env(tweeter_credentials)
-
-  # TODO: The logged user is on the credentials, so maybe get it from there?
-  logged_user = tweeter_credentials["MY_SCREEN_NAME"]
-
-  # https://developer.twitter.com/en/docs/twitter-api/v1/tweets/search/guides/standard-operators
-  query = "from:%s \"This is the unique tweet\"" % logged_user
-  public_tweets = api.search_tweets(count=50, q=query, result_type="recent",
-                                    since_id="1484063267618127872", include_entities=True)
-
-  # tweet is the status object: https://developer.twitter.com/en/docs/twitter-api/v1/data-dictionary/object-model/tweet
-  for tweet in public_tweets:
-    url = "https://twitter.com/%s/status/%s" % (logged_user, tweet.id)
-
-    # https://stackoverflow.com/questions/10494312/parsing-time-string-in-python/10494427#10494427
-    # https://docs.python.org/3/library/time.html#time.strptime
-    # output is "2022-02-02 08:22:19+00:00"
-    #created_time = datetime.strptime(tweet.created_at, '%Y-%m-%d %I:%M:%S%z')
-
-    # Military time formatter
-    # https://stackoverflow.com/questions/10997577/python-timezone-conversion/62947906#62947906
-    time_only = tweet.created_at.astimezone(pytz.timezone('America/Los_Angeles')).strftime("%H:%M:%S")
-    
-    # Verify if the tweet was sent at the exact h:m:s 
-    # This is the unique tweet at 02/02/2022 at 00:22:20
-    attempt_perfect_time = tweet.text.split("at")[2].split(" ")[1].replace(".", "")
-    matched_time = "🎯" if time_only == attempt_perfect_time else "❌"
-
-    # Define rarity if the time created on the server is a palindrome!
-    full_date_time = tweet.created_at.astimezone(pytz.timezone('America/Los_Angeles')).strftime("%m%d%Y%I%M%S")
-    print("Full time %s" % full_date_time)
-    time_rarity = "👑" if is_time_palindrome(full_date_time) else ""
-
-    print("%s%s [%s] @ %s: %s" % (time_rarity, matched_time, time_only, url, tweet.text))
 
 
 def print_json_list():
@@ -381,18 +317,20 @@ def open_tweet_tabs():
     except Exception as err:
       print("An exception occurred while sending tweet: %s" % err)
 
-  print("Finished with all the tweets to open tabs!")     
+  print("Finished with all the tweets to open tabs!")
 
 def main():
   # Just course correction if the bot is sleeping
   MISSED_TIME = False
 
+  tweepy_config = '~/.tweet.client.key'
+  twitter_proxy_client = TwitterProxyClient(tweepy_config)
+
   if MODE == "open-tabs":
     open_tweet_tabs()
 
   elif MODE == "list":
-    tweeter_credentials = load_tweeter_credentials()
-    find_my_nft_tweets(tweeter_credentials)
+    twitter_proxy_client.find_my_nft_tweets()
 
   else:
     # Since python version is not working with the latest version
@@ -404,13 +342,11 @@ def main():
     print(f"* PORT: {ipfs_client_proxy.port}")
     print("")
 
-    tweeter_credentials = load_tweeter_credentials()
-
     if MISSED_TIME:
-      wait_for_next_time_after_delay(ipfs_client_proxy, tweeter_credentials)
+      wait_for_next_time_after_delay(ipfs_client_proxy, twitter_proxy_client)
 
     else:
-      wait_for_next_time(ipfs_client_proxy, tweeter_credentials)
+      wait_for_next_time(ipfs_client_proxy, twitter_proxy_client)
 
   print("")
   print("Finished attempting to tweets")
