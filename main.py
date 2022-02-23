@@ -12,6 +12,10 @@ import ipfshttpclient
 import random
 
 
+# Just run against an IPFS server running a compatible version
+# docker ps | grep 15001
+# 5c316d790864   ipfs/go-ipfs:v0.7.0 "/sbin/tini -- /usr/…"   49 seconds ago   Up 47 seconds
+# 0.0.0.0:14001->4001/tcp, 0.0.0.0:14001->4001/udp, 0.0.0.0:15001->5001/tcp, 0.0.0.0:18080->8080/tcp, 0.0.0.0:18081->8081/tcp
 def get_ipfs_config():
   return {
     "host": "localhost",
@@ -21,10 +25,6 @@ def get_ipfs_config():
 
 def make_ipfs_client(ipfs_config):
   # Make sure the IPFS service is running at the configred values
-  # $ docker ps | grep 15001
-  # 5c316d790864   ipfs/go-ipfs:v0.7.0 "/sbin/tini -- /usr/…"   49 seconds ago   Up 47 seconds
-  # 0.0.0.0:14001->4001/tcp, 0.0.0.0:14001->4001/udp, 0.0.0.0:15001->5001/tcp, 0.0.0.0:18080->8080/tcp, 0.0.0.0:18081->8081/tcp
-  # ipfs-pinner_ipfs_1
   return ipfshttpclient.connect(addr=f"/dns/{ipfs_config['host']}/tcp/{ipfs_config['port']}/http")
 
 
