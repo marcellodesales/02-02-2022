@@ -33,20 +33,7 @@ if MODE == "test" and len(TWEET_TEST_TIME) != 6:
   MODE = "open-tabs"
 
 
-# https://bitbucket.org/skeptichacker/pyjavaproperties/src/master/
-def load_tweeter_credentials():
-  # env vars as props
-  props = Properties()
-  
-  # full path of the props
-  # https://www.geeksforgeeks.org/python-os-path-expanduser-method/
-  # https://github.com/piroor/tweet.sh/issues/35#issuecomment-1027806270
-  tweeter_credentials_envs_path = os.path.expanduser('~/.tweet.client.key')
-  
-  # Load the properties from the file
-  props.load(open(tweeter_credentials_envs_path))
 
-  return props
 
 
 # function to get unique values
@@ -366,7 +353,7 @@ def open_tweet_tabs():
 
   for next_perfect_time in get_current_list():
     print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
-    
+
     hash_tag = "#" + get_tokenized_time(next_perfect_time)
 
     print("")
@@ -378,7 +365,7 @@ def open_tweet_tabs():
 
     # wait a couple of milliseconds
     sleep(3)
- 
+
     try:
       print("=---> Twitting: '%s'" % (perfect_timed_msg))
       # https://stackoverflow.com/questions/5607551/how-to-urlencode-a-querystring-in-python/9345102#9345102
