@@ -6166,3 +6166,815 @@ Tweet Success!!!
 Finished attempting to tweets
 
 Process finished with exit code 0
+
+/Users/marcellodesales/dev/gitlab.com/supercash/products/blockchain/worldfolks/services/worldfolks-characters-api-service/venv/bin/python /Users/marcellodesales/dev/github.com/marcellodesales/02022022/main.py
+=======  Sending tweets backed by IPFS ========
+* HOST: localhost
+* HOST: 15001
+Token 2022-02-22 00:00:00  > Current time is 2022-02-22 16:11:29.908989
+Token 2022-02-22 00:00:02  > Current time is 2022-02-22 16:11:29.909038
+Token 2022-02-22 00:00:20  > Current time is 2022-02-22 16:11:29.909070
+Token 2022-02-22 00:00:22  > Current time is 2022-02-22 16:11:29.909105
+Token 2022-02-22 00:02:00  > Current time is 2022-02-22 16:11:29.909139
+Token 2022-02-22 00:02:02  > Current time is 2022-02-22 16:11:29.909172
+Token 2022-02-22 00:02:20  > Current time is 2022-02-22 16:11:29.909207
+Token 2022-02-22 00:02:22  > Current time is 2022-02-22 16:11:29.909244
+Token 2022-02-22 00:20:00  > Current time is 2022-02-22 16:11:29.909281
+Token 2022-02-22 00:20:02  > Current time is 2022-02-22 16:11:29.909317
+Token 2022-02-22 00:20:20  > Current time is 2022-02-22 16:11:29.909353
+Token 2022-02-22 00:20:22  > Current time is 2022-02-22 16:11:29.909419
+Token 2022-02-22 00:22:00  > Current time is 2022-02-22 16:11:29.909480
+Token 2022-02-22 00:22:02  > Current time is 2022-02-22 16:11:29.909524
+Token 2022-02-22 00:22:20  > Current time is 2022-02-22 16:11:29.909564
+Token 2022-02-22 00:22:22  > Current time is 2022-02-22 16:11:29.909604
+Token 2022-02-22 02:00:00  > Current time is 2022-02-22 16:11:29.909641
+Token 2022-02-22 02:00:02  > Current time is 2022-02-22 16:11:29.909679
+Token 2022-02-22 02:00:20  > Current time is 2022-02-22 16:11:29.909714
+Token 2022-02-22 02:00:22  > Current time is 2022-02-22 16:11:29.909748
+Token 2022-02-22 02:02:00  > Current time is 2022-02-22 16:11:29.909785
+Token 2022-02-22 02:02:02  > Current time is 2022-02-22 16:11:29.909821
+Token 2022-02-22 02:02:20  > Current time is 2022-02-22 16:11:29.909856
+Token 2022-02-22 02:02:22  > Current time is 2022-02-22 16:11:29.909890
+Token 2022-02-22 02:20:00  > Current time is 2022-02-22 16:11:29.909925
+Token 2022-02-22 02:20:02  > Current time is 2022-02-22 16:11:29.909961
+Token 2022-02-22 02:20:20  > Current time is 2022-02-22 16:11:29.909996
+Token 2022-02-22 02:20:22  > Current time is 2022-02-22 16:11:29.910032
+Token 2022-02-22 02:22:00  > Current time is 2022-02-22 16:11:29.910068
+Token 2022-02-22 02:22:02  > Current time is 2022-02-22 16:11:29.910106
+Token 2022-02-22 02:22:20  > Current time is 2022-02-22 16:11:29.910142
+Token 2022-02-22 02:22:22  > Current time is 2022-02-22 16:11:29.910175
+Token 2022-02-22 20:00:00  > Current time is 2022-02-22 16:11:29.910208
+All times list ['000000', '000002', '000020', '000022', '000200', '000202', '000220', '000222', '002000', '002002', '002020', '002022', '002200', '002202', '002220', '002222', '020000', '020002', '020020', '020022', '020200', '020202', '020220', '020222', '022000', '022002', '022020', '022022', '022200', '022202', '022220', '022222']
+Token 2022-02-22 00:00:00  > Current time is 2022-02-22 16:11:29.925574
+Token 2022-02-22 00:00:02  > Current time is 2022-02-22 16:11:29.925643
+Token 2022-02-22 00:00:20  > Current time is 2022-02-22 16:11:29.925705
+Token 2022-02-22 00:00:22  > Current time is 2022-02-22 16:11:29.925736
+Token 2022-02-22 00:02:00  > Current time is 2022-02-22 16:11:29.925765
+Token 2022-02-22 00:02:02  > Current time is 2022-02-22 16:11:29.925801
+Token 2022-02-22 00:02:20  > Current time is 2022-02-22 16:11:29.925836
+Token 2022-02-22 00:02:22  > Current time is 2022-02-22 16:11:29.925871
+Token 2022-02-22 00:20:00  > Current time is 2022-02-22 16:11:29.925905
+Token 2022-02-22 00:20:02  > Current time is 2022-02-22 16:11:29.925938
+Token 2022-02-22 00:20:20  > Current time is 2022-02-22 16:11:29.925973
+Token 2022-02-22 00:20:22  > Current time is 2022-02-22 16:11:29.926010
+Token 2022-02-22 00:22:00  > Current time is 2022-02-22 16:11:29.926037
+Token 2022-02-22 00:22:02  > Current time is 2022-02-22 16:11:29.926058
+Token 2022-02-22 00:22:20  > Current time is 2022-02-22 16:11:29.926080
+Token 2022-02-22 00:22:22  > Current time is 2022-02-22 16:11:29.926101
+Token 2022-02-22 02:00:00  > Current time is 2022-02-22 16:11:29.926127
+Token 2022-02-22 02:00:02  > Current time is 2022-02-22 16:11:29.926160
+Token 2022-02-22 02:00:20  > Current time is 2022-02-22 16:11:29.926192
+Token 2022-02-22 02:00:22  > Current time is 2022-02-22 16:11:29.926253
+Token 2022-02-22 02:02:00  > Current time is 2022-02-22 16:11:29.926322
+Token 2022-02-22 02:02:02  > Current time is 2022-02-22 16:11:29.926369
+Token 2022-02-22 02:02:20  > Current time is 2022-02-22 16:11:29.926409
+Token 2022-02-22 02:02:22  > Current time is 2022-02-22 16:11:29.926447
+Token 2022-02-22 02:20:00  > Current time is 2022-02-22 16:11:29.926484
+Token 2022-02-22 02:20:02  > Current time is 2022-02-22 16:11:29.926527
+Token 2022-02-22 02:20:20  > Current time is 2022-02-22 16:11:29.926564
+Token 2022-02-22 02:20:22  > Current time is 2022-02-22 16:11:29.926598
+Token 2022-02-22 02:22:00  > Current time is 2022-02-22 16:11:29.926634
+Token 2022-02-22 02:22:02  > Current time is 2022-02-22 16:11:29.926670
+Token 2022-02-22 02:22:20  > Current time is 2022-02-22 16:11:29.926705
+Token 2022-02-22 02:22:22  > Current time is 2022-02-22 16:11:29.926742
+Token 2022-02-22 20:00:00  > Current time is 2022-02-22 16:11:29.926779
+This is the next time: 00:00:00
+Current time: 02-22-2022 at 00:00:00  Waiting for 02-22-2022 at 00:00:00
+=> Waiting 15s
+
+########### Unique ##########
+
+* Will tweet at 00:00:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000000.tweet
+Saved '1371' bytes of the tweet message to local file-system at 'logs/02222022000000.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000000 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000000 #02222022000000
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000000 #02222022000000'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000000 #02222022000000' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #nft #timecapsule #nft02222022000000 #02222022000000This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000000 #02222022000000'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmWrbP6P8GrwVmE3khdky9a3HA1GQHNzxjY6zhYKamrvoW
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmWrbP6P8GrwVmE3khdky9a3HA1GQHNzxjY6zhYKamrvoW
+IPFS Success: tweet CID=QmWrbP6P8GrwVmE3khdky9a3HA1GQHNzxjY6zhYKamrvoW
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000000 #IPFS #nft ⛓ #cid_QmWrbP6P8GrwVmE3khdky9a3HA1GQHNzxjY6zhYKamrvoW'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276557261774854
+Tweet Success!!!
+This is the next time: 00:00:02
+Current time: 02-22-2022 at 00:00:02  Waiting for 02-22-2022 at 00:00:02
+=> Waiting 17s
+
+########### Unique ##########
+
+* Will tweet at 00:00:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000002.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022000002.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000002 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000002 #02222022000002
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000002 #02222022000002'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000002 #02222022000002' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000002 #02222022000002'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmeiKFmZqXB4uJFd2nTYZoJVzLHovqBnPiRAhzZxvryS5B
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmeiKFmZqXB4uJFd2nTYZoJVzLHovqBnPiRAhzZxvryS5B
+IPFS Success: tweet CID=QmeiKFmZqXB4uJFd2nTYZoJVzLHovqBnPiRAhzZxvryS5B
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000002 #IPFS #nft ⛓ #cid_QmeiKFmZqXB4uJFd2nTYZoJVzLHovqBnPiRAhzZxvryS5B'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276630506901505
+Tweet Success!!!
+This is the next time: 00:00:20
+Current time: 02-22-2022 at 00:00:20  Waiting for 02-22-2022 at 00:00:20
+=> Waiting 5s
+
+########### Unique ##########
+
+* Will tweet at 00:00:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000020.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022000020.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000020 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000020 #02222022000020
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000020 #02222022000020'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000020 #02222022000020' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000020 #02222022000020'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmT93DwyXru3dDb9qjMofpXZaNK5axs8oH1ai9V9hJgT5A
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmT93DwyXru3dDb9qjMofpXZaNK5axs8oH1ai9V9hJgT5A
+IPFS Success: tweet CID=QmT93DwyXru3dDb9qjMofpXZaNK5axs8oH1ai9V9hJgT5A
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000020 #IPFS #nft ⛓ #cid_QmT93DwyXru3dDb9qjMofpXZaNK5axs8oH1ai9V9hJgT5A'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276653823041539
+Tweet Success!!!
+This is the next time: 00:00:22
+Current time: 02-22-2022 at 00:00:22  Waiting for 02-22-2022 at 00:00:22
+=> Waiting 11s
+
+########### Unique ##########
+
+* Will tweet at 00:00:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000022.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022000022.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000022 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000022 #02222022000022
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000022 #02222022000022'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000022 #02222022000022' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:00:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000022 #02222022000022'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=Qmb7QDgt4TfXYWnFnwdauN4F6TfDtbgspX4mLuztpWSTFz
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/Qmb7QDgt4TfXYWnFnwdauN4F6TfDtbgspX4mLuztpWSTFz
+IPFS Success: tweet CID=Qmb7QDgt4TfXYWnFnwdauN4F6TfDtbgspX4mLuztpWSTFz
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:00:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000022 #IPFS #nft ⛓ #cid_Qmb7QDgt4TfXYWnFnwdauN4F6TfDtbgspX4mLuztpWSTFz'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276702003040256
+Tweet Success!!!
+This is the next time: 00:02:00
+Current time: 02-22-2022 at 00:02:00  Waiting for 02-22-2022 at 00:02:00
+=> Waiting 7s
+
+########### Unique ##########
+
+* Will tweet at 00:02:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000200.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022000200.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000200 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000200 #02222022000200
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000200 #02222022000200'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000200 #02222022000200' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000200 #02222022000200'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=Qma3mPmbkDfPSFSSRh7XWg6Jo8BNWbrEGgn6bAHAMkaFvt
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/Qma3mPmbkDfPSFSSRh7XWg6Jo8BNWbrEGgn6bAHAMkaFvt
+IPFS Success: tweet CID=Qma3mPmbkDfPSFSSRh7XWg6Jo8BNWbrEGgn6bAHAMkaFvt
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000200 #IPFS #nft ⛓ #cid_Qma3mPmbkDfPSFSSRh7XWg6Jo8BNWbrEGgn6bAHAMkaFvt'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276733036617731
+Tweet Success!!!
+This is the next time: 00:02:02
+Current time: 02-22-2022 at 00:02:02  Waiting for 02-22-2022 at 00:02:02
+=> Waiting 11s
+
+########### Unique ##########
+
+* Will tweet at 00:02:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000202.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022000202.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000202 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000202 #02222022000202
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000202 #02222022000202'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000202 #02222022000202' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000202 #02222022000202'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmcZWrrLVYHD7qagJd1VqfPgZCQgTvxXR3bJpnKvCtk2pZ
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmcZWrrLVYHD7qagJd1VqfPgZCQgTvxXR3bJpnKvCtk2pZ
+IPFS Success: tweet CID=QmcZWrrLVYHD7qagJd1VqfPgZCQgTvxXR3bJpnKvCtk2pZ
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000202 #IPFS #nft ⛓ #cid_QmcZWrrLVYHD7qagJd1VqfPgZCQgTvxXR3bJpnKvCtk2pZ'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276780813991937
+Tweet Success!!!
+This is the next time: 00:02:20
+Current time: 02-22-2022 at 00:02:20  Waiting for 02-22-2022 at 00:02:20
+=> Waiting 17s
+
+########### Unique ##########
+
+* Will tweet at 00:02:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000220.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022000220.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000220 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000220 #02222022000220
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000220 #02222022000220'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000220 #02222022000220' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000220 #02222022000220'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmNUgW6LYxfAMPWtiN19JZDnZV2kU2C5yDT49odPX8Rf7z
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmNUgW6LYxfAMPWtiN19JZDnZV2kU2C5yDT49odPX8Rf7z
+IPFS Success: tweet CID=QmNUgW6LYxfAMPWtiN19JZDnZV2kU2C5yDT49odPX8Rf7z
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000220 #IPFS #nft ⛓ #cid_QmNUgW6LYxfAMPWtiN19JZDnZV2kU2C5yDT49odPX8Rf7z'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276853941628934
+Tweet Success!!!
+This is the next time: 00:02:22
+Current time: 02-22-2022 at 00:02:22  Waiting for 02-22-2022 at 00:02:22
+=> Waiting 16s
+
+########### Unique ##########
+
+* Will tweet at 00:02:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022000222.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022000222.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022000222 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000222 #02222022000222
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000222 #02222022000222'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022000222 #02222022000222' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:02:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022000222 #02222022000222'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmQu4f9ztWFZio8tKiGtARj4t1M8N1tLUVxm4gv9aRcPrA
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmQu4f9ztWFZio8tKiGtARj4t1M8N1tLUVxm4gv9aRcPrA
+IPFS Success: tweet CID=QmQu4f9ztWFZio8tKiGtARj4t1M8N1tLUVxm4gv9aRcPrA
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:02:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022000222 #IPFS #nft ⛓ #cid_QmQu4f9ztWFZio8tKiGtARj4t1M8N1tLUVxm4gv9aRcPrA'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276923018002432
+Tweet Success!!!
+This is the next time: 00:20:00
+Current time: 02-22-2022 at 00:20:00  Waiting for 02-22-2022 at 00:20:00
+=> Waiting 10s
+
+########### Unique ##########
+
+* Will tweet at 00:20:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002000.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002000.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002000 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002000 #02222022002000
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002000 #02222022002000'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002000 #02222022002000' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002000 #02222022002000'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmakkcdQ1XFA9eL1v5MfKZxQUT4mXPsAkAX2os88yeuPQ1
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmakkcdQ1XFA9eL1v5MfKZxQUT4mXPsAkAX2os88yeuPQ1
+IPFS Success: tweet CID=QmakkcdQ1XFA9eL1v5MfKZxQUT4mXPsAkAX2os88yeuPQ1
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002000 #IPFS #nft ⛓ #cid_QmakkcdQ1XFA9eL1v5MfKZxQUT4mXPsAkAX2os88yeuPQ1'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496276966630047744
+Tweet Success!!!
+This is the next time: 00:20:02
+Current time: 02-22-2022 at 00:20:02  Waiting for 02-22-2022 at 00:20:02
+=> Waiting 8s
+
+########### Unique ##########
+
+* Will tweet at 00:20:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002002.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002002.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002002 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002002 #02222022002002
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002002 #02222022002002'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002002 #02222022002002' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002002 #02222022002002'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmZXn9JUPJjGQdaKkJRtjxjMXJghP86uTFXW5wRbqJKTDE
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmZXn9JUPJjGQdaKkJRtjxjMXJghP86uTFXW5wRbqJKTDE
+IPFS Success: tweet CID=QmZXn9JUPJjGQdaKkJRtjxjMXJghP86uTFXW5wRbqJKTDE
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002002 #IPFS #nft ⛓ #cid_QmZXn9JUPJjGQdaKkJRtjxjMXJghP86uTFXW5wRbqJKTDE'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277001983782912
+Tweet Success!!!
+This is the next time: 00:20:20
+Current time: 02-22-2022 at 00:20:20  Waiting for 02-22-2022 at 00:20:20
+=> Waiting 19s
+
+########### Unique ##########
+
+* Will tweet at 00:20:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002020.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002020.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002020 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002020 #02222022002020
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002020 #02222022002020'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002020 #02222022002020' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002020 #02222022002020'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmdGrFi3g4frJUnp1DT7cPXjcr5jh7gvqtt8pEuxWKa8eb
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmdGrFi3g4frJUnp1DT7cPXjcr5jh7gvqtt8pEuxWKa8eb
+IPFS Success: tweet CID=QmdGrFi3g4frJUnp1DT7cPXjcr5jh7gvqtt8pEuxWKa8eb
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002020 #IPFS #nft ⛓ #cid_QmdGrFi3g4frJUnp1DT7cPXjcr5jh7gvqtt8pEuxWKa8eb'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277083365916673
+Tweet Success!!!
+This is the next time: 00:20:22
+Current time: 02-22-2022 at 00:20:22  Waiting for 02-22-2022 at 00:20:22
+=> Waiting 17s
+
+########### Unique ##########
+
+* Will tweet at 00:20:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002022.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002022.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002022 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002022 #02222022002022
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002022 #02222022002022'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002022 #02222022002022' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:20:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002022 #02222022002022'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmepiTHuvFZDENZTT9igAwnDuqU7hMgpLmqk1YQD3mKsTA
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmepiTHuvFZDENZTT9igAwnDuqU7hMgpLmqk1YQD3mKsTA
+IPFS Success: tweet CID=QmepiTHuvFZDENZTT9igAwnDuqU7hMgpLmqk1YQD3mKsTA
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:20:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002022 #IPFS #nft ⛓ #cid_QmepiTHuvFZDENZTT9igAwnDuqU7hMgpLmqk1YQD3mKsTA'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277156371918848
+Tweet Success!!!
+This is the next time: 00:22:00
+Current time: 02-22-2022 at 00:22:00  Waiting for 02-22-2022 at 00:22:00
+=> Waiting 11s
+
+########### Unique ##########
+
+* Will tweet at 00:22:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002200.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002200.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002200 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002200 #02222022002200
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002200 #02222022002200'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002200 #02222022002200' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002200 #02222022002200'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmbU72VEKR5r7pHfWqrSCY7zB99u6gse6gcWR8a9YTyBXe
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmbU72VEKR5r7pHfWqrSCY7zB99u6gse6gcWR8a9YTyBXe
+IPFS Success: tweet CID=QmbU72VEKR5r7pHfWqrSCY7zB99u6gse6gcWR8a9YTyBXe
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002200 #IPFS #nft ⛓ #cid_QmbU72VEKR5r7pHfWqrSCY7zB99u6gse6gcWR8a9YTyBXe'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277204199567362
+Tweet Success!!!
+This is the next time: 00:22:02
+Current time: 02-22-2022 at 00:22:02  Waiting for 02-22-2022 at 00:22:02
+=> Waiting 18s
+
+########### Unique ##########
+
+* Will tweet at 00:22:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002202.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002202.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002202 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002202 #02222022002202
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002202 #02222022002202'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002202 #02222022002202' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002202 #02222022002202'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmSpC9kr2YUcZ3ypFBwVXeciaxzUn6JxMCXgh67cEmTezE
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmSpC9kr2YUcZ3ypFBwVXeciaxzUn6JxMCXgh67cEmTezE
+IPFS Success: tweet CID=QmSpC9kr2YUcZ3ypFBwVXeciaxzUn6JxMCXgh67cEmTezE
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002202 #IPFS #nft ⛓ #cid_QmSpC9kr2YUcZ3ypFBwVXeciaxzUn6JxMCXgh67cEmTezE'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277281555116036
+Tweet Success!!!
+This is the next time: 00:22:20
+Current time: 02-22-2022 at 00:22:20  Waiting for 02-22-2022 at 00:22:20
+=> Waiting 10s
+
+########### Unique ##########
+
+* Will tweet at 00:22:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002220.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002220.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002220 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002220 #02222022002220
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002220 #02222022002220'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002220 #02222022002220' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002220 #02222022002220'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmaWY1VdubuWmhvVJwic3DqP2RwAwEWVVuNaiWv2xaaw5G
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmaWY1VdubuWmhvVJwic3DqP2RwAwEWVVuNaiWv2xaaw5G
+IPFS Success: tweet CID=QmaWY1VdubuWmhvVJwic3DqP2RwAwEWVVuNaiWv2xaaw5G
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002220 #IPFS #nft ⛓ #cid_QmaWY1VdubuWmhvVJwic3DqP2RwAwEWVVuNaiWv2xaaw5G'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277325092057088
+Tweet Success!!!
+This is the next time: 00:22:22
+Current time: 02-22-2022 at 00:22:22  Waiting for 02-22-2022 at 00:22:22
+=> Waiting 15s
+
+########### Unique ##########
+
+* Will tweet at 00:22:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022002222.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022002222.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022002222 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002222 #02222022002222
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002222 #02222022002222'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022002222 #02222022002222' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 00:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022002222 #02222022002222'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmdqyJeHTaitBNqq7GtTWtbSdXe7xrWsGey8CLQTHv1G8C
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmdqyJeHTaitBNqq7GtTWtbSdXe7xrWsGey8CLQTHv1G8C
+IPFS Success: tweet CID=QmdqyJeHTaitBNqq7GtTWtbSdXe7xrWsGey8CLQTHv1G8C
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 00:22:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022002222 #IPFS #nft ⛓ #cid_QmdqyJeHTaitBNqq7GtTWtbSdXe7xrWsGey8CLQTHv1G8C'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277391613693952
+Tweet Success!!!
+This is the next time: 02:00:00
+Current time: 02-22-2022 at 02:00:00  Waiting for 02-22-2022 at 02:00:00
+=> Waiting 17s
+
+########### Unique ##########
+
+* Will tweet at 02:00:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020000.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020000.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020000 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020000 #02222022020000
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020000 #02222022020000'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020000 #02222022020000' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020000 #02222022020000'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmUKs9QayvRvWZDAs3qCneKkFu4kPHUTRk6ZdjF6TDDT4m
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmUKs9QayvRvWZDAs3qCneKkFu4kPHUTRk6ZdjF6TDDT4m
+IPFS Success: tweet CID=QmUKs9QayvRvWZDAs3qCneKkFu4kPHUTRk6ZdjF6TDDT4m
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020000 #IPFS #nft ⛓ #cid_QmUKs9QayvRvWZDAs3qCneKkFu4kPHUTRk6ZdjF6TDDT4m'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277464871362560
+Tweet Success!!!
+This is the next time: 02:00:02
+Current time: 02-22-2022 at 02:00:02  Waiting for 02-22-2022 at 02:00:02
+=> Waiting 10s
+
+########### Unique ##########
+
+* Will tweet at 02:00:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020002.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020002.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020002 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020002 #02222022020002
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020002 #02222022020002'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020002 #02222022020002' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020002 #02222022020002'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmVke1WPvBDobjs8KdtRdN1w6jpSEZkfeq4rAstiwKdQgm
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmVke1WPvBDobjs8KdtRdN1w6jpSEZkfeq4rAstiwKdQgm
+IPFS Success: tweet CID=QmVke1WPvBDobjs8KdtRdN1w6jpSEZkfeq4rAstiwKdQgm
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020002 #IPFS #nft ⛓ #cid_QmVke1WPvBDobjs8KdtRdN1w6jpSEZkfeq4rAstiwKdQgm'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277508479541248
+Tweet Success!!!
+This is the next time: 02:00:20
+Current time: 02-22-2022 at 02:00:20  Waiting for 02-22-2022 at 02:00:20
+=> Waiting 5s
+
+########### Unique ##########
+
+* Will tweet at 02:00:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020020.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020020.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020020 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020020 #02222022020020
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020020 #02222022020020'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020020 #02222022020020' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020020 #02222022020020'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmYu7J2hpfkhLLAbuQV5zdJadbV6q4177biB6TfSfFX1hk
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmYu7J2hpfkhLLAbuQV5zdJadbV6q4177biB6TfSfFX1hk
+IPFS Success: tweet CID=QmYu7J2hpfkhLLAbuQV5zdJadbV6q4177biB6TfSfFX1hk
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020020 #IPFS #nft ⛓ #cid_QmYu7J2hpfkhLLAbuQV5zdJadbV6q4177biB6TfSfFX1hk'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277531044958212
+Tweet Success!!!
+This is the next time: 02:00:22
+Current time: 02-22-2022 at 02:00:22  Waiting for 02-22-2022 at 02:00:22
+=> Waiting 6s
+
+########### Unique ##########
+
+* Will tweet at 02:00:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020022.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020022.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020022 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020022 #02222022020022
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020022 #02222022020022'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020022 #02222022020022' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:00:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020022 #02222022020022'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmRHYHVscGaVpQ8nS5N233DMWa3NkhodXY77n1gtoNo2U1
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmRHYHVscGaVpQ8nS5N233DMWa3NkhodXY77n1gtoNo2U1
+IPFS Success: tweet CID=QmRHYHVscGaVpQ8nS5N233DMWa3NkhodXY77n1gtoNo2U1
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:00:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020022 #IPFS #nft ⛓ #cid_QmRHYHVscGaVpQ8nS5N233DMWa3NkhodXY77n1gtoNo2U1'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277557859086340
+Tweet Success!!!
+This is the next time: 02:02:00
+Current time: 02-22-2022 at 02:02:00  Waiting for 02-22-2022 at 02:02:00
+=> Waiting 5s
+
+########### Unique ##########
+
+* Will tweet at 02:02:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020200.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020200.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020200 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020200 #02222022020200
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020200 #02222022020200'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020200 #02222022020200' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020200 #02222022020200'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=Qmcyj5x12SuDrK18sX66a4X2JnHSmjoLCDw4JzncqCSoi1
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/Qmcyj5x12SuDrK18sX66a4X2JnHSmjoLCDw4JzncqCSoi1
+IPFS Success: tweet CID=Qmcyj5x12SuDrK18sX66a4X2JnHSmjoLCDw4JzncqCSoi1
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020200 #IPFS #nft ⛓ #cid_Qmcyj5x12SuDrK18sX66a4X2JnHSmjoLCDw4JzncqCSoi1'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277580500013058
+Tweet Success!!!
+This is the next time: 02:02:02
+Current time: 02-22-2022 at 02:02:02  Waiting for 02-22-2022 at 02:02:02
+=> Waiting 9s
+
+########### Unique ##########
+
+* Will tweet at 02:02:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020202.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020202.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020202 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020202 #02222022020202
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020202 #02222022020202'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020202 #02222022020202' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020202 #02222022020202'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmUfgC83d9vEV7tKccEn834zG23cSSxEkd93bGGrowt4Xg
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmUfgC83d9vEV7tKccEn834zG23cSSxEkd93bGGrowt4Xg
+IPFS Success: tweet CID=QmUfgC83d9vEV7tKccEn834zG23cSSxEkd93bGGrowt4Xg
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020202 #IPFS #nft ⛓ #cid_QmUfgC83d9vEV7tKccEn834zG23cSSxEkd93bGGrowt4Xg'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277619850969089
+Tweet Success!!!
+This is the next time: 02:02:20
+Current time: 02-22-2022 at 02:02:20  Waiting for 02-22-2022 at 02:02:20
+=> Waiting 11s
+
+########### Unique ##########
+
+* Will tweet at 02:02:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020220.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020220.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020220 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020220 #02222022020220
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020220 #02222022020220'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020220 #02222022020220' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020220 #02222022020220'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmPqNkTJSRdqSNawL4UqrUCErxv4RKh7DyGAs1bApV2vvG
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmPqNkTJSRdqSNawL4UqrUCErxv4RKh7DyGAs1bApV2vvG
+IPFS Success: tweet CID=QmPqNkTJSRdqSNawL4UqrUCErxv4RKh7DyGAs1bApV2vvG
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020220 #IPFS #nft ⛓ #cid_QmPqNkTJSRdqSNawL4UqrUCErxv4RKh7DyGAs1bApV2vvG'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277667691126786
+Tweet Success!!!
+This is the next time: 02:02:22
+Current time: 02-22-2022 at 02:02:22  Waiting for 02-22-2022 at 02:02:22
+=> Waiting 17s
+
+########### Unique ##########
+
+* Will tweet at 02:02:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022020222.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022020222.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022020222 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020222 #02222022020222
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020222 #02222022020222'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022020222 #02222022020222' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:02:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022020222 #02222022020222'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmYhutiu9zVjRePLks4qi2RM7wqgGtzQkYEBEoHUGs9zuK
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmYhutiu9zVjRePLks4qi2RM7wqgGtzQkYEBEoHUGs9zuK
+IPFS Success: tweet CID=QmYhutiu9zVjRePLks4qi2RM7wqgGtzQkYEBEoHUGs9zuK
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:02:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022020222 #IPFS #nft ⛓ #cid_QmYhutiu9zVjRePLks4qi2RM7wqgGtzQkYEBEoHUGs9zuK'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277740613345284
+Tweet Success!!!
+This is the next time: 02:20:00
+Current time: 02-22-2022 at 02:20:00  Waiting for 02-22-2022 at 02:20:00
+=> Waiting 14s
+
+########### Unique ##########
+
+* Will tweet at 02:20:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022000.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022022000.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022000 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022000 #02222022022000
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022000 #02222022022000'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022000 #02222022022000' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022000 #02222022022000'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmRwUK2PGDa4Xfefm19Mu2MAAAN1Z69HAfVx9WCjaCBPM2
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmRwUK2PGDa4Xfefm19Mu2MAAAN1Z69HAfVx9WCjaCBPM2
+IPFS Success: tweet CID=QmRwUK2PGDa4Xfefm19Mu2MAAAN1Z69HAfVx9WCjaCBPM2
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022022000 #IPFS #nft ⛓ #cid_QmRwUK2PGDa4Xfefm19Mu2MAAAN1Z69HAfVx9WCjaCBPM2'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277803032997891
+Tweet Success!!!
+This is the next time: 02:20:02
+Current time: 02-22-2022 at 02:20:02  Waiting for 02-22-2022 at 02:20:02
+=> Waiting 8s
+
+########### Unique ##########
+
+* Will tweet at 02:20:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022002.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022022002.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022002 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022002 #02222022022002
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022002 #02222022022002'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022002 #02222022022002' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022002 #02222022022002'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmUoMEHWWejAt4eyLfTe6zSuEkS7mohk6Ten4gCs4qaKLn
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmUoMEHWWejAt4eyLfTe6zSuEkS7mohk6Ten4gCs4qaKLn
+IPFS Success: tweet CID=QmUoMEHWWejAt4eyLfTe6zSuEkS7mohk6Ten4gCs4qaKLn
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022022002 #IPFS #nft ⛓ #cid_QmUoMEHWWejAt4eyLfTe6zSuEkS7mohk6Ten4gCs4qaKLn'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277839477280768
+Tweet Success!!!
+This is the next time: 02:20:20
+Current time: 02-22-2022 at 02:20:20  Waiting for 02-22-2022 at 02:20:20
+=> Waiting 13s
+
+########### Unique ##########
+
+* Will tweet at 02:20:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022020.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022022020.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022020 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022020 #02222022022020
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022020 #02222022022020'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:20 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022020 #02222022022020' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022020 #02222022022020'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmYopELq1f5AQb1bc5bvkPzP6HH13StvUMMnxVxKrQw3Xh
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmYopELq1f5AQb1bc5bvkPzP6HH13StvUMMnxVxKrQw3Xh
+IPFS Success: tweet CID=QmYopELq1f5AQb1bc5bvkPzP6HH13StvUMMnxVxKrQw3Xh
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:20 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022022020 #IPFS #nft ⛓ #cid_QmYopELq1f5AQb1bc5bvkPzP6HH13StvUMMnxVxKrQw3Xh'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277896255586306
+Tweet Success!!!
+This is the next time: 02:20:22
+Current time: 02-22-2022 at 02:20:22  Waiting for 02-22-2022 at 02:20:22
+=> Waiting 15s
+
+########### Unique ##########
+
+* Will tweet at 02:20:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022022.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022022022.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022022 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022022 #02222022022022
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022022 #02222022022022'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022022 #02222022022022' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:20:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022022 #02222022022022'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmVAKGgMkYBo6cL2d9gS4AVRPsXzH7zxRS2neT4fUHop4S
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmVAKGgMkYBo6cL2d9gS4AVRPsXzH7zxRS2neT4fUHop4S
+IPFS Success: tweet CID=QmVAKGgMkYBo6cL2d9gS4AVRPsXzH7zxRS2neT4fUHop4S
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:20:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022022022 #IPFS #nft ⛓ #cid_QmVAKGgMkYBo6cL2d9gS4AVRPsXzH7zxRS2neT4fUHop4S'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496277960889753601
+Tweet Success!!!
+This is the next time: 02:22:00
+Current time: 02-22-2022 at 02:22:00  Waiting for 02-22-2022 at 02:22:00
+=> Waiting 16s
+
+########### Unique ##########
+
+* Will tweet at 02:22:00
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022200.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022022200.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022200 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022200 #02222022022200
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022200 #02222022022200'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:00 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022200 #02222022022200' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:00 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022200 #02222022022200'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmZR2ASxuTEk8s7uQKNDyYuhmf4tuVgjaRdqjWNoK6KCyG
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmZR2ASxuTEk8s7uQKNDyYuhmf4tuVgjaRdqjWNoK6KCyG
+IPFS Success: tweet CID=QmZR2ASxuTEk8s7uQKNDyYuhmf4tuVgjaRdqjWNoK6KCyG
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:00 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022022200 #IPFS #nft ⛓ #cid_QmZR2ASxuTEk8s7uQKNDyYuhmf4tuVgjaRdqjWNoK6KCyG'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496278029709889536
+Tweet Success!!!
+This is the next time: 02:22:02
+Current time: 02-22-2022 at 02:22:02  Waiting for 02-22-2022 at 02:22:02
+=> Waiting 14s
+
+########### Unique ##########
+
+* Will tweet at 02:22:02
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022202.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022022202.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022202 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022202 #02222022022202
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022202 #02222022022202'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:02 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022202 #02222022022202' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:02 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022202 #02222022022202'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmZ65q8hq9RM9pVymFyG1Sva1yAwRkdpZHuN8YmLYp9h3c
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmZ65q8hq9RM9pVymFyG1Sva1yAwRkdpZHuN8YmLYp9h3c
+IPFS Success: tweet CID=QmZ65q8hq9RM9pVymFyG1Sva1yAwRkdpZHuN8YmLYp9h3c
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:02 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022022202 #IPFS #nft ⛓ #cid_QmZ65q8hq9RM9pVymFyG1Sva1yAwRkdpZHuN8YmLYp9h3c'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496278090787352576
+Tweet Success!!!
+This is the next time: 02:22:20
+Current time: 02-22-2022 at 02:22:20  Waiting for 02-22-2022 at 02:22:20
+=> Waiting 15s
+
+########### Unique ##########
+
+* Will tweet at 02:22:20
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022220.tweet
+Saved '281' bytes of the tweet message to local file-system at 'logs/02222022022220.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022220 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:20 only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022220 #02222022022220
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 Look, @marcellodesales! I found the legendary #palindrome time \xf0\x9f\x91\x91! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022220 #02222022022220'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:20 only 2 digits on its representation! 🤖 Look, @marcellodesales! I found the legendary #palindrome time 👑! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022220 #02222022022220' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:20 only 2 digits on its representation! \xf0\x9f\xa4\x96 Look, @marcellodesales! I found the legendary #palindrome time \xf0\x9f\x91\x91! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022220 #02222022022220'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmNftxyfnYJ62uMzTigZ7tMJwYHjX3CCDFRUJaKnCWeQhR
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmNftxyfnYJ62uMzTigZ7tMJwYHjX3CCDFRUJaKnCWeQhR
+IPFS Success: tweet CID=QmNftxyfnYJ62uMzTigZ7tMJwYHjX3CCDFRUJaKnCWeQhR
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:20 represented with only 2 digits 🤖 Look @marcellodesales, I found the legendary #palindrome time 👑! Saved it on the #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022220 #02222022022220'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496278155350265861
+Tweet Success!!!
+This is the next time: 02:22:22
+Current time: 02-22-2022 at 02:22:22  Waiting for 02-22-2022 at 02:22:22
+=> Waiting 19s
+
+########### Unique ##########
+
+* Will tweet at 02:22:22
+
+
+Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)
+Saving tweet to local file-system at logs/02222022022222.tweet
+Saved '279' bytes of the tweet message to local file-system at 'logs/02222022022222.tweet'
+Connecting to IPFS to persist the tweet!
+Recorded tweet from 02222022022222 to IPFS as CID: This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022222 #02222022022222
+IPFS message: b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022222 #02222022022222'
+WARNING: tweet message 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:22 only 2 digits on its representation! 🤖 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain ⛓ #IPFS #late #nft #timecapsule #nft02222022022222 #02222022022222' was retrieved from IPFS differently as 'b'This is a rare tweet time capsule on \xf0\x9f\x93\x85 02/22/2022 at \xe2\x8f\xb0 02:22:22 only 2 digits on its representation! \xf0\x9f\xa4\x96 My creator @marcellodesales told me to watch for palindrome times! This will also go to #blockchain \xe2\x9b\x93 #IPFS #late #nft #timecapsule #nft02222022022222 #02222022022222'': Emojis encoded?
+The same tweet was saved in the ⛓️ blockchain IFPS CID=QmS7bevkBrFWbtjhHms2zkJdes9kHaGDE6BpWGUj2v6YKi
+Explore the message after IPFS replication: https://webui.ipfs.io/#/ipfs/QmS7bevkBrFWbtjhHms2zkJdes9kHaGDE6BpWGUj2v6YKi
+IPFS Success: tweet CID=QmS7bevkBrFWbtjhHms2zkJdes9kHaGDE6BpWGUj2v6YKi
+=---> Twitting: 'This is a rare tweet time capsule on 📅 02/22/2022 at ⏰ 02:22:22 represented with only 2 digits 🤖 As asked by my creator @marcellodesales, I've saved it in the blockchain! 🕑 #timecapsule #late #02222022022222 #IPFS #nft ⛓ #cid_QmS7bevkBrFWbtjhHms2zkJdes9kHaGDE6BpWGUj2v6YKi'
+
+Tweed saved at https://twitter.com/marcellodesales/status/1496278236728152064
+Tweet Success!!!
+
+Finished attempting to tweets
+
+Process finished with exit code 0
