@@ -8,24 +8,9 @@ from pyjavaproperties import Properties
 import os
 import webbrowser
 import urllib.parse
-import ipfshttpclient
 import random
 
-
-# Just run against an IPFS server running a compatible version
-# docker ps | grep 15001
-# 5c316d790864   ipfs/go-ipfs:v0.7.0 "/sbin/tini -- /usr/…"   49 seconds ago   Up 47 seconds
-# 0.0.0.0:14001->4001/tcp, 0.0.0.0:14001->4001/udp, 0.0.0.0:15001->5001/tcp, 0.0.0.0:18080->8080/tcp, 0.0.0.0:18081->8081/tcp
-def get_ipfs_config():
-  return {
-    "host": "localhost",
-    "port": 15001
-  }
-
-
-def make_ipfs_client(ipfs_config):
-  # Make sure the IPFS service is running at the configred values
-  return ipfshttpclient.connect(addr=f"/dns/{ipfs_config['host']}/tcp/{ipfs_config['port']}/http")
+from supercash.platform.blockchain.ipfs_proxy_client import IPFSClientProxy
 
 
 def get_current_date():
@@ -157,14 +142,15 @@ def get_tokenized_time(specified_time):
   return specified_time[:2] + ":" + specified_time[2:4] + ":" + specified_time[4:]
 
 
-def wait_for_next_time_after_delay(ipfs_config, tweeter_credentials):
+def wait_for_next_time_after_delay(ipfs_client_proxy, tweeter_credentials):
   # Get the next time from the current list
 
   # This is when the bot missed the appointment at 00h-2am
   delayed = True
-  print(f"All times list {get_current_list(delayed)}")
+  current_delayed_list  = get_current_list(delayed)
+  print(f"All delayed time list {current_delayed_list}")
 
-  for next_perfect_time in get_current_list():
+  for next_perfect_time in current_delayed_list:
     print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
 
     # wait until the current time matches a unique time
@@ -181,14 +167,15 @@ def wait_for_next_time_after_delay(ipfs_config, tweeter_credentials):
     sleep(wait_seconds)
 
     # Attemtp to send the tweet at this specified time
-    tweet_at_perfect_time(ipfs_config, tweeter_credentials, next_perfect_time)
+    tweet_at_perfect_time(ipfs_client_proxy, tweeter_credentials, next_perfect_time)
 
-def wait_for_next_time(ipfs_config, tweeter_credentials):
+def wait_for_next_time(ipfs_client_proxy, tweeter_credentials):
   # Get the next time from the current list
 
-  print(f"All times list {get_current_list(ipfs_config)}")
+  current_list  = get_current_list()
+  print(f"All times list {current_list}")
 
-  for next_perfect_time in get_current_list():
+  for next_perfect_time in current_list:
     print("This is the next time: %s" % (get_tokenized_time(next_perfect_time)))
 
     # wait until the current time matches a unique time
@@ -202,8 +189,8 @@ def wait_for_next_time(ipfs_config, tweeter_credentials):
       # wait a couple of milliseconds
       sleep(0.4)
 
-    # Attemtp to send the tweet at this specified time
-    tweet_at_perfect_time(ipfs_config, tweeter_credentials, next_perfect_time)
+    # Attempt to send the tweet at this specified time
+    tweet_at_perfect_time(ipfs_client_proxy, tweeter_credentials, next_perfect_time)
 
 
 def write_file(time, tweet_message):
@@ -218,19 +205,17 @@ def write_file(time, tweet_message):
     return file_path
 
 
-def send_to_ipfs(ipfs_config, time, tweet_message):
+def send_to_ipfs(ipfs_client_proxy, time, tweet_message):
     # https://discuss.ipfs.io/t/how-to-add-multiple-files-not-a-directory-with-one-api-request/998/2
     tweet_message_local_file_path = write_file(time, tweet_message)
 
     print(f"Connecting to IPFS to persist the tweet!")
-    ipfs_client = make_ipfs_client(ipfs_config)
-    tweet_ipfs_response = ipfs_client.add(tweet_message_local_file_path)
+    tweet_ipfs_cid_hash = ipfs_client_proxy.add_file_to_ipfs(tweet_message_local_file_path)
 
     # Get the hash to be returned!
-    tweet_ipfs_cid_hash = tweet_ipfs_response['Hash']
-    print(f"Recorded tweet from {time} to IPFS as CID: {tweet_message}")
+    print(f"Recorded tweet from {time} to IPFS as CID: {tweet_ipfs_cid_hash}")
 
-    persisted_ipfs_tweet_msg = ipfs_client.cat(tweet_ipfs_cid_hash)
+    persisted_ipfs_tweet_msg = ipfs_client_proxy.retrieve_file_content_by_cid(tweet_ipfs_cid_hash)
     print(f"IPFS message: {persisted_ipfs_tweet_msg}")
 
     # Validate first if it was correctly sent!
@@ -261,7 +246,7 @@ def make_tweet_message(date_original_format, perfect_time, full_time, tweet_cid=
   return perfect_timed_msg
 
 
-def tweet_at_perfect_time(ipfs_config, tweeter_credentials, perfect_time):
+def tweet_at_perfect_time(ipfs_client_proxy, tweeter_credentials, perfect_time):
   # Generate the hash tag based on the time
   hash_tag = "#" + get_tokenized_time(perfect_time)
 
@@ -285,7 +270,7 @@ def tweet_at_perfect_time(ipfs_config, tweeter_credentials, perfect_time):
   try:
     print("")
     print("Writing the tweet 🐦 to the Blockchain ⛓️ (IPFS)")
-    tweet_ipfs_cid = send_to_ipfs(ipfs_config, full_time, perfect_timed_msg)
+    tweet_ipfs_cid = send_to_ipfs(ipfs_client_proxy, full_time, perfect_timed_msg)
     print(f"IPFS Success: tweet CID={tweet_ipfs_cid}")
 
   except Exception as err:
@@ -423,20 +408,22 @@ def main():
     find_my_nft_tweets(tweeter_credentials)
 
   else:
-    ipfs_config = get_ipfs_config()
+    # Since python version is not working with the latest version
+    # connect to an instance that is compatible
+    ipfs_client_proxy = IPFSClientProxy.make_compatible_version_client()
     print("=======  Sending tweets backed by IPFS ========")
     print("")
-    print(f"* HOST: {ipfs_config['host']}")
-    print(f"* PORT: {ipfs_config['port']}")
+    print(f"* HOST: {ipfs_client_proxy.host}")
+    print(f"* PORT: {ipfs_client_proxy.port}")
     print("")
 
     tweeter_credentials = load_tweeter_credentials()
 
     if MISSED_TIME:
-      wait_for_next_time_after_delay(ipfs_config, tweeter_credentials)
+      wait_for_next_time_after_delay(ipfs_client_proxy, tweeter_credentials)
 
     else:
-      wait_for_next_time(ipfs_config, tweeter_credentials)
+      wait_for_next_time(ipfs_client_proxy, tweeter_credentials)
 
   print("")
   print("Finished attempting to tweets")
