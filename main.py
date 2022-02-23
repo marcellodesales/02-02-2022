@@ -9,10 +9,18 @@ import os
 import webbrowser
 import urllib.parse
 import ipfshttpclient
+import random
+
+
+def get_ipfs_config():
+  return {
+    "host": "localhost",
+    "port": 15001
+  }
 
 
 def get_current_date():
-  return "02-20-2022"
+  return "02-22-2022"
 
 
 def get_current_date_token():
