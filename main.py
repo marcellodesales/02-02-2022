@@ -9,6 +9,7 @@ from supercash.platform.messaging.twitter_proxy_client import TwitterProxyClient
 from supercash.platform.scheduler.prime_time_calculator import PrimeTimeCalculator
 from supercash.platform.scheduler.alarm_scheduler import AlarmScheduler
 from supercash.platform.util.date_formatter import DateFormatter
+from supercash.platform.util.file_util import FileUtil
 from supercash.platform.messaging.twitter_message_formatter import TwitterMessageFormatter
 
 def wait_for_next_time_after_delay(ipfs_client_proxy, twitter_proxy_client, prime_time_calculator):
@@ -65,11 +66,9 @@ def wait_for_next_time(ipfs_client_proxy, twitter_proxy_client, prime_time_calcu
 def write_file(time, tweet_message):
     file_path = f"logs/{time}.tweet"
     print(f"Saving tweet to local file-system at {file_path}")
-    f = open(file_path, "a")
-    f.write(tweet_message)
-    f.close()
+    FileUtil.write_content_to_file_path(tweet_message, file_path)
 
-    tweet_message_file_size = os.stat(file_path).st_size
+    tweet_message_file_size = FileUtil.get_file_fize(file_path)
     print(f"Saved '{tweet_message_file_size}' bytes of the tweet message to local file-system at '{file_path}'")
     return file_path
 
